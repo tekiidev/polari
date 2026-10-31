@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "classification.schema.json",
+  "title": "Classification",
+  "description": "Saída do classificador para um item (post/notícia). Espelhado em pipeline/models.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "is_political_violence",
+    "violence_type",
+    "report_nature",
+    "target_type",
+    "city_mentioned",
+    "uf_mentioned",
+    "confidence",
+    "rationale"
+  ],
+  "properties": {
+    "is_political_violence": {
+      "type": "boolean",
+      "description": "True só se o texto trata de violência, ameaça ou intimidação com motivação política/eleitoral indicada no próprio texto."
+    },
+    "violence_type": {
+      "type": "string",
+      "enum": [
+        "ameaca",
+        "ofensa",
+        "agressao_fisica",
+        "atentado",
+        "homicidio",
+        "violencia_de_genero",
+        "intimidacao_institucional",
+        "outro",
+        "nenhum"
+      ],
+      "description": "Use 'nenhum' quando is_political_violence for false."
+    },
+    "report_nature": {
+      "type": "string",
+      "enum": [
+        "relato_primeira_mao",
+        "relato_terceiros",
+        "noticia_compartilhada",
+        "opiniao_ou_ironia",
+        "boato_nao_verificado",
+        "incitacao",
+        "indeterminado"
+      ]
+    },
+    "target_type": {
+      "type": "string",
+      "enum": [
+        "candidato",
+        "eleitor",
+        "agente_publico",
+        "jornalista",
+        "apoiador",
+        "instituicao",
+        "indeterminado",
+        "nenhum"
+      ],
+      "description": "Quem sofreu a violência (função, nunca posição política)."
+    },
+    "city_mentioned": {
+      "type": ["string", "null"],
+      "description": "Cidade citada explicitamente no texto; null se não houver."
+    },
+    "uf_mentioned": {
+      "type": ["string", "null"],
+      "pattern": "^[A-Z]{2}$",
+      "description": "Sigla da UF citada explicitamente; null se não houver."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "rationale": {
+      "type": "string",
+      "maxLength": 280,
+      "description": "Justificativa curta (1-2 frases) baseada só no texto."
+    }
+  }
+}
