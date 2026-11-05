@@ -9,7 +9,7 @@ Pontos que você precisa entender para implementar:
        params: q, since, until, lang, limit (<=100), cursor
        header: Authorization: Bearer <accessJwt>
      Pagine com `cursor` até atingir `limit` ou acabar.
-  3. Mapeie cada post para RawItem: uri -> source_id, record.text -> text,
+  3. Mapeie cada post para RawItem: item_id("bluesky", uri) -> item_id, uri -> source_ref, record.text -> text,
      record.createdAt -> created_at. NÃO guarde handle/DID do autor.
   4. Respeite rate limits (faça backoff em 429) e confira a doc atual da API.
 

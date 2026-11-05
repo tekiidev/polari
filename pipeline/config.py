@@ -20,6 +20,7 @@ class Settings:
     bluesky_app_password: str = os.getenv("BLUESKY_APP_PASSWORD", "")
     nominatim_user_agent: str = os.getenv("NOMINATIM_USER_AGENT", "")
     min_cell_size: int = int(os.getenv("MIN_CELL_SIZE", "3"))
+    secret_key: str = os.getenv("POLARI_SECRET_KEY", "")
 
     raw_dir: Path = ROOT / "data" / "raw"
     processed_dir: Path = ROOT / "data" / "processed"

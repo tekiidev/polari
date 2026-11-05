@@ -1,8 +1,9 @@
 name: daily-pipeline
 
 on:
-  schedule:
-    - cron: "0 9 * * *"   # 06:00 em Brasília (UTC-3)
+  # Cron desligado até a Fase 5 (o pipeline ainda não existe). Para religar:
+  # schedule:
+  #   - cron: "0 9 * * *"   # 06:00 em Brasília (UTC-3)
   workflow_dispatch: {}
 
 permissions:

@@ -1,5 +1,7 @@
 # Polari
 
+> **Status:** em construção. A estrutura e a metodologia estão prontas; a coleta e o mapa ainda não.
+
 **Monitor de discurso sobre violência política no Brasil**, com pipeline automatizado
 (coleta → classificação com LLM → geocodificação → agregação) e mapa interativo.
 
@@ -77,14 +79,13 @@ python -m pipeline.run --dry-run
 
 ## Roadmap
 
-- [ ] **D0 Viabilidade e backfill (urgente):** contar itens por dia desde 16/08 e coletar o pré-eleição antes que as fontes expirem
-- [ ] D1 Repositório, tabela IBGE, coletor Bluesky/RSS (incremental)
-- [ ] D2 Prompt + classificador + 200 itens rotulados à mão + teste de deriva (`eval/`)
-- [ ] D3 Resolvedor de cidade + agregação por período e taxas
-- [ ] D4 Mapa Leaflet (bolhas, filtros) + linha do tempo com marcadores de 04/10 e 25/10 + seletor de janela
-- [ ] D5 Agente de briefing + PDF + automação diária + painel de saúde
-- [ ] D6 Deploy, README final, GIF/vídeo de 2 min
-- [ ] D7 Página de metodologia, limitações e validação externa
+- [ ] **1. Fundação e viabilidade:** contagem de dados por dia nas fontes, armazenamento do bruto fora do Actions, IDs com hash
+- [ ] 2. Coleta de dados: notícias com backfill e checkpoint, Bluesky, pré-filtro com recall medido
+- [ ] 3. Classificador e avaliação: classificador LLM, gabarito humano de 200 itens, escolha do LLM por medição
+- [ ] 4. Modelo próprio: baseline TF-IDF, fine-tuning do BERTimbau, publicação no Hugging Face
+- [ ] 5. Produção: agregação e métricas do estudo, pipeline diário (BERT → LLM)
+- [ ] 6. Vitrine: site com linha do tempo e mapa por UF, deploy, artigo técnico
+- [ ] 7. Revisão final
 
 ## Métricas de impacto (preencher com números reais)
 
@@ -101,11 +102,15 @@ python -m pipeline.run --dry-run
 
 ## Ética e dados
 
-- O repositório público contém **apenas agregados** e IDs; o texto bruto fica em `data/raw/` (ignorado pelo git).
+- O repositório público contém **apenas agregados**. O texto bruto fica em armazenamento privado,
+  fora do git (localmente em `data/raw/`, ignorado).
+- Itens são identificados por um hash com chave secreta. O link original fica só no armazenamento
+  privado, criptografado, para respeitar posts apagados pelos autores.
 - Não armazenamos handle nem perfil de autores. Células com menos de 3 itens são ocultadas.
 - Não classificamos a orientação política de pessoas (dado sensível, LGPD).
 - Respeitamos os termos de cada fonte; não coletamos do X sem a API oficial.
 
 ## Licença
 
-A definir (sugestão: MIT para o código).
+[AGPL-3.0](LICENSE). Quem distribuir uma versão modificada, ou oferecê-la como serviço online,
+precisa publicar o código sob a mesma licença.
