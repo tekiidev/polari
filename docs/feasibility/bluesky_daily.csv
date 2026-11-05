@@ -1,0 +1,2636 @@
+day,query,hits_total
+2026-10-04,eleição,2922
+2026-10-04,eleições,3584
+2026-10-04,candidato,1281
+2026-10-04,voto,3619
+2026-10-04,violência política,6
+2026-10-04,violência eleitoral,5
+2026-10-04,ameaça de morte,12
+2026-10-04,ameaça candidato,2
+2026-10-04,ameaça eleição,7
+2026-10-04,agredido eleitor,2
+2026-10-04,agressão eleição,0
+2026-10-04,atentado candidato,0
+2026-10-04,candidato baleado,0
+2026-10-04,vereador baleado,0
+2026-10-04,vereadora assassinada,0
+2026-10-04,candidato morto,0
+2026-10-04,tiro candidato,0
+2026-10-05,eleição,1793
+2026-10-05,eleições,9084
+2026-10-05,candidato,665
+2026-10-05,voto,1616
+2026-10-05,violência política,17
+2026-10-05,violência eleitoral,2
+2026-10-05,ameaça de morte,9
+2026-10-05,ameaça candidato,3
+2026-10-05,ameaça eleição,2
+2026-10-05,agredido eleitor,0
+2026-10-05,agressão eleição,1
+2026-10-05,atentado candidato,0
+2026-10-05,candidato baleado,0
+2026-10-05,vereador baleado,0
+2026-10-05,vereadora assassinada,2
+2026-10-05,candidato morto,0
+2026-10-05,tiro candidato,1
+2026-06-01,eleição,79
+2026-06-01,eleições,137
+2026-06-01,candidato,137
+2026-06-01,voto,97
+2026-06-01,violência política,9
+2026-06-01,violência eleitoral,0
+2026-06-01,ameaça de morte,2
+2026-06-01,ameaça candidato,0
+2026-06-01,ameaça eleição,0
+2026-06-01,agredido eleitor,0
+2026-06-01,agressão eleição,0
+2026-06-01,atentado candidato,8
+2026-06-01,candidato baleado,0
+2026-06-01,vereador baleado,0
+2026-06-01,vereadora assassinada,0
+2026-06-01,candidato morto,0
+2026-06-01,tiro candidato,0
+2026-06-02,eleição,104
+2026-06-02,eleições,149
+2026-06-02,candidato,130
+2026-06-02,voto,90
+2026-06-02,violência política,6
+2026-06-02,violência eleitoral,0
+2026-06-02,ameaça de morte,4
+2026-06-02,ameaça candidato,1
+2026-06-02,ameaça eleição,0
+2026-06-02,agredido eleitor,0
+2026-06-02,agressão eleição,0
+2026-06-02,atentado candidato,0
+2026-06-02,candidato baleado,0
+2026-06-02,vereador baleado,0
+2026-06-02,vereadora assassinada,0
+2026-06-02,candidato morto,0
+2026-06-02,tiro candidato,2
+2026-06-03,eleição,92
+2026-06-03,eleições,108
+2026-06-03,candidato,120
+2026-06-03,voto,82
+2026-06-03,violência política,10
+2026-06-03,violência eleitoral,1
+2026-06-03,ameaça de morte,2
+2026-06-03,ameaça candidato,2
+2026-06-03,ameaça eleição,0
+2026-06-03,agredido eleitor,0
+2026-06-03,agressão eleição,0
+2026-06-03,atentado candidato,0
+2026-06-03,candidato baleado,0
+2026-06-03,vereador baleado,1
+2026-06-03,vereadora assassinada,0
+2026-06-03,candidato morto,0
+2026-06-03,tiro candidato,0
+2026-06-04,eleição,71
+2026-06-04,eleições,122
+2026-06-04,candidato,117
+2026-06-04,voto,97
+2026-06-04,violência política,6
+2026-06-04,violência eleitoral,0
+2026-06-04,ameaça de morte,1
+2026-06-04,ameaça candidato,9
+2026-06-04,ameaça eleição,2
+2026-06-04,agredido eleitor,0
+2026-06-04,agressão eleição,0
+2026-06-04,atentado candidato,2
+2026-06-04,candidato baleado,0
+2026-06-04,vereador baleado,1
+2026-06-04,vereadora assassinada,0
+2026-06-04,candidato morto,0
+2026-06-04,tiro candidato,0
+2026-06-05,eleição,46
+2026-06-05,eleições,78
+2026-06-05,candidato,77
+2026-06-05,voto,62
+2026-06-05,violência política,2
+2026-06-05,violência eleitoral,0
+2026-06-05,ameaça de morte,4
+2026-06-05,ameaça candidato,1
+2026-06-05,ameaça eleição,0
+2026-06-05,agredido eleitor,0
+2026-06-05,agressão eleição,0
+2026-06-05,atentado candidato,1
+2026-06-05,candidato baleado,0
+2026-06-05,vereador baleado,0
+2026-06-05,vereadora assassinada,0
+2026-06-05,candidato morto,0
+2026-06-05,tiro candidato,1
+2026-06-06,eleição,52
+2026-06-06,eleições,57
+2026-06-06,candidato,90
+2026-06-06,voto,63
+2026-06-06,violência política,4
+2026-06-06,violência eleitoral,0
+2026-06-06,ameaça de morte,2
+2026-06-06,ameaça candidato,1
+2026-06-06,ameaça eleição,0
+2026-06-06,agredido eleitor,0
+2026-06-06,agressão eleição,0
+2026-06-06,atentado candidato,1
+2026-06-06,candidato baleado,0
+2026-06-06,vereador baleado,0
+2026-06-06,vereadora assassinada,0
+2026-06-06,candidato morto,0
+2026-06-06,tiro candidato,0
+2026-06-07,eleição,78
+2026-06-07,eleições,98
+2026-06-07,candidato,59
+2026-06-07,voto,67
+2026-06-07,violência política,3
+2026-06-07,violência eleitoral,0
+2026-06-07,ameaça de morte,1
+2026-06-07,ameaça candidato,0
+2026-06-07,ameaça eleição,0
+2026-06-07,agredido eleitor,0
+2026-06-07,agressão eleição,0
+2026-06-07,atentado candidato,0
+2026-06-07,candidato baleado,0
+2026-06-07,vereador baleado,0
+2026-06-07,vereadora assassinada,0
+2026-06-07,candidato morto,0
+2026-06-07,tiro candidato,0
+2026-06-08,eleição,366
+2026-06-08,eleições,342
+2026-06-08,candidato,148
+2026-06-08,voto,218
+2026-06-08,violência política,6
+2026-06-08,violência eleitoral,0
+2026-06-08,ameaça de morte,1
+2026-06-08,ameaça candidato,1
+2026-06-08,ameaça eleição,0
+2026-06-08,agredido eleitor,0
+2026-06-08,agressão eleição,0
+2026-06-08,atentado candidato,0
+2026-06-08,candidato baleado,0
+2026-06-08,vereador baleado,0
+2026-06-08,vereadora assassinada,0
+2026-06-08,candidato morto,0
+2026-06-08,tiro candidato,1
+2026-06-09,eleição,207
+2026-06-09,eleições,165
+2026-06-09,candidato,83
+2026-06-09,voto,154
+2026-06-09,violência política,8
+2026-06-09,violência eleitoral,1
+2026-06-09,ameaça de morte,3
+2026-06-09,ameaça candidato,0
+2026-06-09,ameaça eleição,1
+2026-06-09,agredido eleitor,0
+2026-06-09,agressão eleição,0
+2026-06-09,atentado candidato,0
+2026-06-09,candidato baleado,0
+2026-06-09,vereador baleado,0
+2026-06-09,vereadora assassinada,0
+2026-06-09,candidato morto,0
+2026-06-09,tiro candidato,0
+2026-06-10,eleição,143
+2026-06-10,eleições,132
+2026-06-10,candidato,85
+2026-06-10,voto,127
+2026-06-10,violência política,7
+2026-06-10,violência eleitoral,0
+2026-06-10,ameaça de morte,3
+2026-06-10,ameaça candidato,0
+2026-06-10,ameaça eleição,1
+2026-06-10,agredido eleitor,0
+2026-06-10,agressão eleição,0
+2026-06-10,atentado candidato,0
+2026-06-10,candidato baleado,0
+2026-06-10,vereador baleado,0
+2026-06-10,vereadora assassinada,0
+2026-06-10,candidato morto,0
+2026-06-10,tiro candidato,0
+2026-06-11,eleição,138
+2026-06-11,eleições,122
+2026-06-11,candidato,57
+2026-06-11,voto,112
+2026-06-11,violência política,5
+2026-06-11,violência eleitoral,1
+2026-06-11,ameaça de morte,1
+2026-06-11,ameaça candidato,0
+2026-06-11,ameaça eleição,0
+2026-06-11,agredido eleitor,0
+2026-06-11,agressão eleição,0
+2026-06-11,atentado candidato,0
+2026-06-11,candidato baleado,0
+2026-06-11,vereador baleado,0
+2026-06-11,vereadora assassinada,0
+2026-06-11,candidato morto,0
+2026-06-11,tiro candidato,0
+2026-06-12,eleição,64
+2026-06-12,eleições,111
+2026-06-12,candidato,55
+2026-06-12,voto,69
+2026-06-12,violência política,6
+2026-06-12,violência eleitoral,0
+2026-06-12,ameaça de morte,4
+2026-06-12,ameaça candidato,0
+2026-06-12,ameaça eleição,2
+2026-06-12,agredido eleitor,0
+2026-06-12,agressão eleição,0
+2026-06-12,atentado candidato,0
+2026-06-12,candidato baleado,0
+2026-06-12,vereador baleado,0
+2026-06-12,vereadora assassinada,0
+2026-06-12,candidato morto,0
+2026-06-12,tiro candidato,0
+2026-06-13,eleição,62
+2026-06-13,eleições,89
+2026-06-13,candidato,38
+2026-06-13,voto,58
+2026-06-13,violência política,4
+2026-06-13,violência eleitoral,0
+2026-06-13,ameaça de morte,0
+2026-06-13,ameaça candidato,0
+2026-06-13,ameaça eleição,0
+2026-06-13,agredido eleitor,0
+2026-06-13,agressão eleição,0
+2026-06-13,atentado candidato,0
+2026-06-13,candidato baleado,0
+2026-06-13,vereador baleado,0
+2026-06-13,vereadora assassinada,0
+2026-06-13,candidato morto,0
+2026-06-13,tiro candidato,0
+2026-06-14,eleição,51
+2026-06-14,eleições,56
+2026-06-14,candidato,43
+2026-06-14,voto,46
+2026-06-14,violência política,2
+2026-06-14,violência eleitoral,2
+2026-06-14,ameaça de morte,1
+2026-06-14,ameaça candidato,0
+2026-06-14,ameaça eleição,0
+2026-06-14,agredido eleitor,3
+2026-06-14,agressão eleição,0
+2026-06-14,atentado candidato,0
+2026-06-14,candidato baleado,0
+2026-06-14,vereador baleado,0
+2026-06-14,vereadora assassinada,0
+2026-06-14,candidato morto,0
+2026-06-14,tiro candidato,0
+2026-06-15,eleição,55
+2026-06-15,eleições,101
+2026-06-15,candidato,98
+2026-06-15,voto,58
+2026-06-15,violência política,11
+2026-06-15,violência eleitoral,0
+2026-06-15,ameaça de morte,2
+2026-06-15,ameaça candidato,1
+2026-06-15,ameaça eleição,0
+2026-06-15,agredido eleitor,2
+2026-06-15,agressão eleição,0
+2026-06-15,atentado candidato,1
+2026-06-15,candidato baleado,1
+2026-06-15,vereador baleado,1
+2026-06-15,vereadora assassinada,0
+2026-06-15,candidato morto,0
+2026-06-15,tiro candidato,0
+2026-06-16,eleição,61
+2026-06-16,eleições,114
+2026-06-16,candidato,78
+2026-06-16,voto,180
+2026-06-16,violência política,4
+2026-06-16,violência eleitoral,0
+2026-06-16,ameaça de morte,2
+2026-06-16,ameaça candidato,3
+2026-06-16,ameaça eleição,0
+2026-06-16,agredido eleitor,0
+2026-06-16,agressão eleição,0
+2026-06-16,atentado candidato,1
+2026-06-16,candidato baleado,0
+2026-06-16,vereador baleado,5
+2026-06-16,vereadora assassinada,0
+2026-06-16,candidato morto,0
+2026-06-16,tiro candidato,0
+2026-06-17,eleição,69
+2026-06-17,eleições,170
+2026-06-17,candidato,61
+2026-06-17,voto,56
+2026-06-17,violência política,3
+2026-06-17,violência eleitoral,0
+2026-06-17,ameaça de morte,1
+2026-06-17,ameaça candidato,1
+2026-06-17,ameaça eleição,1
+2026-06-17,agredido eleitor,0
+2026-06-17,agressão eleição,0
+2026-06-17,atentado candidato,1
+2026-06-17,candidato baleado,0
+2026-06-17,vereador baleado,0
+2026-06-17,vereadora assassinada,0
+2026-06-17,candidato morto,0
+2026-06-17,tiro candidato,0
+2026-06-18,eleição,71
+2026-06-18,eleições,102
+2026-06-18,candidato,69
+2026-06-18,voto,63
+2026-06-18,violência política,11
+2026-06-18,violência eleitoral,1
+2026-06-18,ameaça de morte,1
+2026-06-18,ameaça candidato,0
+2026-06-18,ameaça eleição,0
+2026-06-18,agredido eleitor,0
+2026-06-18,agressão eleição,0
+2026-06-18,atentado candidato,0
+2026-06-18,candidato baleado,0
+2026-06-18,vereador baleado,0
+2026-06-18,vereadora assassinada,0
+2026-06-18,candidato morto,0
+2026-06-18,tiro candidato,0
+2026-06-19,eleição,40
+2026-06-19,eleições,88
+2026-06-19,candidato,65
+2026-06-19,voto,77
+2026-06-19,violência política,3
+2026-06-19,violência eleitoral,0
+2026-06-19,ameaça de morte,2
+2026-06-19,ameaça candidato,0
+2026-06-19,ameaça eleição,1
+2026-06-19,agredido eleitor,0
+2026-06-19,agressão eleição,1
+2026-06-19,atentado candidato,0
+2026-06-19,candidato baleado,0
+2026-06-19,vereador baleado,0
+2026-06-19,vereadora assassinada,0
+2026-06-19,candidato morto,0
+2026-06-19,tiro candidato,0
+2026-06-20,eleição,64
+2026-06-20,eleições,102
+2026-06-20,candidato,64
+2026-06-20,voto,77
+2026-06-20,violência política,5
+2026-06-20,violência eleitoral,0
+2026-06-20,ameaça de morte,3
+2026-06-20,ameaça candidato,0
+2026-06-20,ameaça eleição,0
+2026-06-20,agredido eleitor,0
+2026-06-20,agressão eleição,0
+2026-06-20,atentado candidato,0
+2026-06-20,candidato baleado,0
+2026-06-20,vereador baleado,0
+2026-06-20,vereadora assassinada,0
+2026-06-20,candidato morto,0
+2026-06-20,tiro candidato,0
+2026-06-21,eleição,145
+2026-06-21,eleições,111
+2026-06-21,candidato,141
+2026-06-21,voto,139
+2026-06-21,violência política,2
+2026-06-21,violência eleitoral,0
+2026-06-21,ameaça de morte,2
+2026-06-21,ameaça candidato,2
+2026-06-21,ameaça eleição,0
+2026-06-21,agredido eleitor,0
+2026-06-21,agressão eleição,0
+2026-06-21,atentado candidato,0
+2026-06-21,candidato baleado,0
+2026-06-21,vereador baleado,0
+2026-06-21,vereadora assassinada,0
+2026-06-21,candidato morto,0
+2026-06-21,tiro candidato,0
+2026-06-22,eleição,166
+2026-06-22,eleições,185
+2026-06-22,candidato,153
+2026-06-22,voto,54
+2026-06-22,violência política,6
+2026-06-22,violência eleitoral,2
+2026-06-22,ameaça de morte,1
+2026-06-22,ameaça candidato,0
+2026-06-22,ameaça eleição,0
+2026-06-22,agredido eleitor,0
+2026-06-22,agressão eleição,0
+2026-06-22,atentado candidato,0
+2026-06-22,candidato baleado,0
+2026-06-22,vereador baleado,0
+2026-06-22,vereadora assassinada,0
+2026-06-22,candidato morto,0
+2026-06-22,tiro candidato,0
+2026-06-23,eleição,131
+2026-06-23,eleições,180
+2026-06-23,candidato,91
+2026-06-23,voto,82
+2026-06-23,violência política,3
+2026-06-23,violência eleitoral,0
+2026-06-23,ameaça de morte,1
+2026-06-23,ameaça candidato,1
+2026-06-23,ameaça eleição,2
+2026-06-23,agredido eleitor,0
+2026-06-23,agressão eleição,0
+2026-06-23,atentado candidato,0
+2026-06-23,candidato baleado,0
+2026-06-23,vereador baleado,0
+2026-06-23,vereadora assassinada,0
+2026-06-23,candidato morto,0
+2026-06-23,tiro candidato,0
+2026-06-24,eleição,142
+2026-06-24,eleições,204
+2026-06-24,candidato,109
+2026-06-24,voto,67
+2026-06-24,violência política,2
+2026-06-24,violência eleitoral,0
+2026-06-24,ameaça de morte,4
+2026-06-24,ameaça candidato,1
+2026-06-24,ameaça eleição,2
+2026-06-24,agredido eleitor,0
+2026-06-24,agressão eleição,0
+2026-06-24,atentado candidato,0
+2026-06-24,candidato baleado,0
+2026-06-24,vereador baleado,0
+2026-06-24,vereadora assassinada,0
+2026-06-24,candidato morto,0
+2026-06-24,tiro candidato,0
+2026-06-25,eleição,87
+2026-06-25,eleições,134
+2026-06-25,candidato,98
+2026-06-25,voto,95
+2026-06-25,violência política,5
+2026-06-25,violência eleitoral,2
+2026-06-25,ameaça de morte,2
+2026-06-25,ameaça candidato,1
+2026-06-25,ameaça eleição,1
+2026-06-25,agredido eleitor,0
+2026-06-25,agressão eleição,0
+2026-06-25,atentado candidato,0
+2026-06-25,candidato baleado,0
+2026-06-25,vereador baleado,0
+2026-06-25,vereadora assassinada,0
+2026-06-25,candidato morto,0
+2026-06-25,tiro candidato,0
+2026-06-26,eleição,105
+2026-06-26,eleições,151
+2026-06-26,candidato,119
+2026-06-26,voto,95
+2026-06-26,violência política,6
+2026-06-26,violência eleitoral,0
+2026-06-26,ameaça de morte,3
+2026-06-26,ameaça candidato,0
+2026-06-26,ameaça eleição,0
+2026-06-26,agredido eleitor,0
+2026-06-26,agressão eleição,0
+2026-06-26,atentado candidato,0
+2026-06-26,candidato baleado,0
+2026-06-26,vereador baleado,0
+2026-06-26,vereadora assassinada,0
+2026-06-26,candidato morto,0
+2026-06-26,tiro candidato,0
+2026-06-27,eleição,91
+2026-06-27,eleições,74
+2026-06-27,candidato,67
+2026-06-27,voto,57
+2026-06-27,violência política,3
+2026-06-27,violência eleitoral,0
+2026-06-27,ameaça de morte,2
+2026-06-27,ameaça candidato,0
+2026-06-27,ameaça eleição,0
+2026-06-27,agredido eleitor,0
+2026-06-27,agressão eleição,1
+2026-06-27,atentado candidato,0
+2026-06-27,candidato baleado,0
+2026-06-27,vereador baleado,0
+2026-06-27,vereadora assassinada,0
+2026-06-27,candidato morto,0
+2026-06-27,tiro candidato,0
+2026-06-28,eleição,57
+2026-06-28,eleições,78
+2026-06-28,candidato,50
+2026-06-28,voto,47
+2026-06-28,violência política,4
+2026-06-28,violência eleitoral,1
+2026-06-28,ameaça de morte,1
+2026-06-28,ameaça candidato,1
+2026-06-28,ameaça eleição,0
+2026-06-28,agredido eleitor,0
+2026-06-28,agressão eleição,0
+2026-06-28,atentado candidato,0
+2026-06-28,candidato baleado,0
+2026-06-28,vereador baleado,0
+2026-06-28,vereadora assassinada,0
+2026-06-28,candidato morto,0
+2026-06-28,tiro candidato,0
+2026-06-29,eleição,66
+2026-06-29,eleições,107
+2026-06-29,candidato,57
+2026-06-29,voto,111
+2026-06-29,violência política,6
+2026-06-29,violência eleitoral,0
+2026-06-29,ameaça de morte,9
+2026-06-29,ameaça candidato,0
+2026-06-29,ameaça eleição,0
+2026-06-29,agredido eleitor,0
+2026-06-29,agressão eleição,0
+2026-06-29,atentado candidato,0
+2026-06-29,candidato baleado,0
+2026-06-29,vereador baleado,0
+2026-06-29,vereadora assassinada,0
+2026-06-29,candidato morto,0
+2026-06-29,tiro candidato,0
+2026-06-30,eleição,78
+2026-06-30,eleições,103
+2026-06-30,candidato,68
+2026-06-30,voto,110
+2026-06-30,violência política,10
+2026-06-30,violência eleitoral,0
+2026-06-30,ameaça de morte,5
+2026-06-30,ameaça candidato,2
+2026-06-30,ameaça eleição,0
+2026-06-30,agredido eleitor,0
+2026-06-30,agressão eleição,0
+2026-06-30,atentado candidato,0
+2026-06-30,candidato baleado,0
+2026-06-30,vereador baleado,0
+2026-06-30,vereadora assassinada,0
+2026-06-30,candidato morto,1
+2026-06-30,tiro candidato,0
+2026-07-01,eleição,67
+2026-07-01,eleições,134
+2026-07-01,candidato,92
+2026-07-01,voto,143
+2026-07-01,violência política,15
+2026-07-01,violência eleitoral,2
+2026-07-01,ameaça de morte,2
+2026-07-01,ameaça candidato,0
+2026-07-01,ameaça eleição,0
+2026-07-01,agredido eleitor,0
+2026-07-01,agressão eleição,0
+2026-07-01,atentado candidato,0
+2026-07-01,candidato baleado,0
+2026-07-01,vereador baleado,0
+2026-07-01,vereadora assassinada,0
+2026-07-01,candidato morto,0
+2026-07-01,tiro candidato,0
+2026-07-02,eleição,83
+2026-07-02,eleições,145
+2026-07-02,candidato,80
+2026-07-02,voto,106
+2026-07-02,violência política,7
+2026-07-02,violência eleitoral,0
+2026-07-02,ameaça de morte,2
+2026-07-02,ameaça candidato,0
+2026-07-02,ameaça eleição,0
+2026-07-02,agredido eleitor,0
+2026-07-02,agressão eleição,0
+2026-07-02,atentado candidato,0
+2026-07-02,candidato baleado,0
+2026-07-02,vereador baleado,0
+2026-07-02,vereadora assassinada,0
+2026-07-02,candidato morto,0
+2026-07-02,tiro candidato,0
+2026-07-03,eleição,62
+2026-07-03,eleições,166
+2026-07-03,candidato,63
+2026-07-03,voto,103
+2026-07-03,violência política,8
+2026-07-03,violência eleitoral,0
+2026-07-03,ameaça de morte,4
+2026-07-03,ameaça candidato,0
+2026-07-03,ameaça eleição,0
+2026-07-03,agredido eleitor,0
+2026-07-03,agressão eleição,0
+2026-07-03,atentado candidato,0
+2026-07-03,candidato baleado,0
+2026-07-03,vereador baleado,0
+2026-07-03,vereadora assassinada,0
+2026-07-03,candidato morto,0
+2026-07-03,tiro candidato,0
+2026-07-04,eleição,39
+2026-07-04,eleições,67
+2026-07-04,candidato,32
+2026-07-04,voto,55
+2026-07-04,violência política,3
+2026-07-04,violência eleitoral,0
+2026-07-04,ameaça de morte,0
+2026-07-04,ameaça candidato,0
+2026-07-04,ameaça eleição,0
+2026-07-04,agredido eleitor,0
+2026-07-04,agressão eleição,0
+2026-07-04,atentado candidato,0
+2026-07-04,candidato baleado,0
+2026-07-04,vereador baleado,0
+2026-07-04,vereadora assassinada,0
+2026-07-04,candidato morto,0
+2026-07-04,tiro candidato,0
+2026-07-05,eleição,111
+2026-07-05,eleições,123
+2026-07-05,candidato,56
+2026-07-05,voto,61
+2026-07-05,violência política,4
+2026-07-05,violência eleitoral,0
+2026-07-05,ameaça de morte,3
+2026-07-05,ameaça candidato,0
+2026-07-05,ameaça eleição,1
+2026-07-05,agredido eleitor,0
+2026-07-05,agressão eleição,0
+2026-07-05,atentado candidato,0
+2026-07-05,candidato baleado,0
+2026-07-05,vereador baleado,0
+2026-07-05,vereadora assassinada,0
+2026-07-05,candidato morto,0
+2026-07-05,tiro candidato,0
+2026-07-06,eleição,78
+2026-07-06,eleições,121
+2026-07-06,candidato,57
+2026-07-06,voto,68
+2026-07-06,violência política,1
+2026-07-06,violência eleitoral,0
+2026-07-06,ameaça de morte,0
+2026-07-06,ameaça candidato,2
+2026-07-06,ameaça eleição,0
+2026-07-06,agredido eleitor,0
+2026-07-06,agressão eleição,0
+2026-07-06,atentado candidato,0
+2026-07-06,candidato baleado,0
+2026-07-06,vereador baleado,0
+2026-07-06,vereadora assassinada,0
+2026-07-06,candidato morto,0
+2026-07-06,tiro candidato,1
+2026-07-07,eleição,66
+2026-07-07,eleições,133
+2026-07-07,candidato,170
+2026-07-07,voto,90
+2026-07-07,violência política,5
+2026-07-07,violência eleitoral,0
+2026-07-07,ameaça de morte,2
+2026-07-07,ameaça candidato,1
+2026-07-07,ameaça eleição,0
+2026-07-07,agredido eleitor,0
+2026-07-07,agressão eleição,0
+2026-07-07,atentado candidato,0
+2026-07-07,candidato baleado,0
+2026-07-07,vereador baleado,0
+2026-07-07,vereadora assassinada,0
+2026-07-07,candidato morto,0
+2026-07-07,tiro candidato,2
+2026-07-08,eleição,70
+2026-07-08,eleições,155
+2026-07-08,candidato,123
+2026-07-08,voto,95
+2026-07-08,violência política,10
+2026-07-08,violência eleitoral,0
+2026-07-08,ameaça de morte,2
+2026-07-08,ameaça candidato,0
+2026-07-08,ameaça eleição,1
+2026-07-08,agredido eleitor,0
+2026-07-08,agressão eleição,0
+2026-07-08,atentado candidato,0
+2026-07-08,candidato baleado,0
+2026-07-08,vereador baleado,0
+2026-07-08,vereadora assassinada,0
+2026-07-08,candidato morto,0
+2026-07-08,tiro candidato,0
+2026-07-09,eleição,64
+2026-07-09,eleições,148
+2026-07-09,candidato,114
+2026-07-09,voto,81
+2026-07-09,violência política,5
+2026-07-09,violência eleitoral,1
+2026-07-09,ameaça de morte,2
+2026-07-09,ameaça candidato,2
+2026-07-09,ameaça eleição,1
+2026-07-09,agredido eleitor,0
+2026-07-09,agressão eleição,0
+2026-07-09,atentado candidato,0
+2026-07-09,candidato baleado,0
+2026-07-09,vereador baleado,0
+2026-07-09,vereadora assassinada,0
+2026-07-09,candidato morto,0
+2026-07-09,tiro candidato,0
+2026-07-10,eleição,57
+2026-07-10,eleições,120
+2026-07-10,candidato,97
+2026-07-10,voto,79
+2026-07-10,violência política,8
+2026-07-10,violência eleitoral,3
+2026-07-10,ameaça de morte,4
+2026-07-10,ameaça candidato,0
+2026-07-10,ameaça eleição,0
+2026-07-10,agredido eleitor,0
+2026-07-10,agressão eleição,0
+2026-07-10,atentado candidato,0
+2026-07-10,candidato baleado,0
+2026-07-10,vereador baleado,0
+2026-07-10,vereadora assassinada,0
+2026-07-10,candidato morto,1
+2026-07-10,tiro candidato,1
+2026-07-11,eleição,45
+2026-07-11,eleições,80
+2026-07-11,candidato,81
+2026-07-11,voto,54
+2026-07-11,violência política,3
+2026-07-11,violência eleitoral,0
+2026-07-11,ameaça de morte,6
+2026-07-11,ameaça candidato,0
+2026-07-11,ameaça eleição,0
+2026-07-11,agredido eleitor,0
+2026-07-11,agressão eleição,0
+2026-07-11,atentado candidato,0
+2026-07-11,candidato baleado,0
+2026-07-11,vereador baleado,0
+2026-07-11,vereadora assassinada,0
+2026-07-11,candidato morto,0
+2026-07-11,tiro candidato,0
+2026-07-12,eleição,47
+2026-07-12,eleições,109
+2026-07-12,candidato,83
+2026-07-12,voto,41
+2026-07-12,violência política,4
+2026-07-12,violência eleitoral,0
+2026-07-12,ameaça de morte,3
+2026-07-12,ameaça candidato,5
+2026-07-12,ameaça eleição,5
+2026-07-12,agredido eleitor,0
+2026-07-12,agressão eleição,0
+2026-07-12,atentado candidato,1
+2026-07-12,candidato baleado,0
+2026-07-12,vereador baleado,0
+2026-07-12,vereadora assassinada,0
+2026-07-12,candidato morto,0
+2026-07-12,tiro candidato,0
+2026-07-13,eleição,102
+2026-07-13,eleições,149
+2026-07-13,candidato,86
+2026-07-13,voto,80
+2026-07-13,violência política,4
+2026-07-13,violência eleitoral,0
+2026-07-13,ameaça de morte,4
+2026-07-13,ameaça candidato,0
+2026-07-13,ameaça eleição,3
+2026-07-13,agredido eleitor,0
+2026-07-13,agressão eleição,0
+2026-07-13,atentado candidato,0
+2026-07-13,candidato baleado,0
+2026-07-13,vereador baleado,0
+2026-07-13,vereadora assassinada,0
+2026-07-13,candidato morto,0
+2026-07-13,tiro candidato,0
+2026-07-14,eleição,79
+2026-07-14,eleições,140
+2026-07-14,candidato,72
+2026-07-14,voto,91
+2026-07-14,violência política,10
+2026-07-14,violência eleitoral,3
+2026-07-14,ameaça de morte,7
+2026-07-14,ameaça candidato,0
+2026-07-14,ameaça eleição,1
+2026-07-14,agredido eleitor,0
+2026-07-14,agressão eleição,0
+2026-07-14,atentado candidato,0
+2026-07-14,candidato baleado,2
+2026-07-14,vereador baleado,0
+2026-07-14,vereadora assassinada,0
+2026-07-14,candidato morto,0
+2026-07-14,tiro candidato,0
+2026-07-15,eleição,93
+2026-07-15,eleições,154
+2026-07-15,candidato,132
+2026-07-15,voto,116
+2026-07-15,violência política,13
+2026-07-15,violência eleitoral,0
+2026-07-15,ameaça de morte,1
+2026-07-15,ameaça candidato,0
+2026-07-15,ameaça eleição,1
+2026-07-15,agredido eleitor,0
+2026-07-15,agressão eleição,0
+2026-07-15,atentado candidato,0
+2026-07-15,candidato baleado,0
+2026-07-15,vereador baleado,0
+2026-07-15,vereadora assassinada,0
+2026-07-15,candidato morto,1
+2026-07-15,tiro candidato,0
+2026-07-16,eleição,104
+2026-07-16,eleições,243
+2026-07-16,candidato,108
+2026-07-16,voto,93
+2026-07-16,violência política,9
+2026-07-16,violência eleitoral,0
+2026-07-16,ameaça de morte,3
+2026-07-16,ameaça candidato,0
+2026-07-16,ameaça eleição,0
+2026-07-16,agredido eleitor,0
+2026-07-16,agressão eleição,0
+2026-07-16,atentado candidato,0
+2026-07-16,candidato baleado,0
+2026-07-16,vereador baleado,0
+2026-07-16,vereadora assassinada,0
+2026-07-16,candidato morto,0
+2026-07-16,tiro candidato,0
+2026-07-17,eleição,82
+2026-07-17,eleições,207
+2026-07-17,candidato,93
+2026-07-17,voto,84
+2026-07-17,violência política,5
+2026-07-17,violência eleitoral,0
+2026-07-17,ameaça de morte,3
+2026-07-17,ameaça candidato,1
+2026-07-17,ameaça eleição,1
+2026-07-17,agredido eleitor,0
+2026-07-17,agressão eleição,0
+2026-07-17,atentado candidato,0
+2026-07-17,candidato baleado,0
+2026-07-17,vereador baleado,0
+2026-07-17,vereadora assassinada,0
+2026-07-17,candidato morto,0
+2026-07-17,tiro candidato,0
+2026-07-18,eleição,48
+2026-07-18,eleições,145
+2026-07-18,candidato,69
+2026-07-18,voto,59
+2026-07-18,violência política,4
+2026-07-18,violência eleitoral,1
+2026-07-18,ameaça de morte,6
+2026-07-18,ameaça candidato,1
+2026-07-18,ameaça eleição,0
+2026-07-18,agredido eleitor,0
+2026-07-18,agressão eleição,0
+2026-07-18,atentado candidato,0
+2026-07-18,candidato baleado,0
+2026-07-18,vereador baleado,0
+2026-07-18,vereadora assassinada,0
+2026-07-18,candidato morto,0
+2026-07-18,tiro candidato,0
+2026-07-19,eleição,71
+2026-07-19,eleições,117
+2026-07-19,candidato,59
+2026-07-19,voto,45
+2026-07-19,violência política,5
+2026-07-19,violência eleitoral,2
+2026-07-19,ameaça de morte,3
+2026-07-19,ameaça candidato,3
+2026-07-19,ameaça eleição,0
+2026-07-19,agredido eleitor,0
+2026-07-19,agressão eleição,0
+2026-07-19,atentado candidato,0
+2026-07-19,candidato baleado,0
+2026-07-19,vereador baleado,0
+2026-07-19,vereadora assassinada,0
+2026-07-19,candidato morto,0
+2026-07-19,tiro candidato,0
+2026-07-20,eleição,83
+2026-07-20,eleições,231
+2026-07-20,candidato,132
+2026-07-20,voto,85
+2026-07-20,violência política,2
+2026-07-20,violência eleitoral,1
+2026-07-20,ameaça de morte,7
+2026-07-20,ameaça candidato,0
+2026-07-20,ameaça eleição,0
+2026-07-20,agredido eleitor,0
+2026-07-20,agressão eleição,0
+2026-07-20,atentado candidato,2
+2026-07-20,candidato baleado,0
+2026-07-20,vereador baleado,1
+2026-07-20,vereadora assassinada,0
+2026-07-20,candidato morto,0
+2026-07-20,tiro candidato,0
+2026-07-21,eleição,81
+2026-07-21,eleições,234
+2026-07-21,candidato,139
+2026-07-21,voto,121
+2026-07-21,violência política,6
+2026-07-21,violência eleitoral,0
+2026-07-21,ameaça de morte,3
+2026-07-21,ameaça candidato,2
+2026-07-21,ameaça eleição,0
+2026-07-21,agredido eleitor,0
+2026-07-21,agressão eleição,0
+2026-07-21,atentado candidato,1
+2026-07-21,candidato baleado,0
+2026-07-21,vereador baleado,2
+2026-07-21,vereadora assassinada,0
+2026-07-21,candidato morto,0
+2026-07-21,tiro candidato,0
+2026-07-22,eleição,110
+2026-07-22,eleições,240
+2026-07-22,candidato,200
+2026-07-22,voto,94
+2026-07-22,violência política,4
+2026-07-22,violência eleitoral,1
+2026-07-22,ameaça de morte,2
+2026-07-22,ameaça candidato,0
+2026-07-22,ameaça eleição,1
+2026-07-22,agredido eleitor,0
+2026-07-22,agressão eleição,0
+2026-07-22,atentado candidato,2
+2026-07-22,candidato baleado,0
+2026-07-22,vereador baleado,0
+2026-07-22,vereadora assassinada,0
+2026-07-22,candidato morto,0
+2026-07-22,tiro candidato,1
+2026-07-23,eleição,135
+2026-07-23,eleições,195
+2026-07-23,candidato,178
+2026-07-23,voto,102
+2026-07-23,violência política,5
+2026-07-23,violência eleitoral,0
+2026-07-23,ameaça de morte,0
+2026-07-23,ameaça candidato,0
+2026-07-23,ameaça eleição,1
+2026-07-23,agredido eleitor,0
+2026-07-23,agressão eleição,0
+2026-07-23,atentado candidato,0
+2026-07-23,candidato baleado,0
+2026-07-23,vereador baleado,0
+2026-07-23,vereadora assassinada,0
+2026-07-23,candidato morto,0
+2026-07-23,tiro candidato,0
+2026-07-24,eleição,73
+2026-07-24,eleições,146
+2026-07-24,candidato,106
+2026-07-24,voto,105
+2026-07-24,violência política,7
+2026-07-24,violência eleitoral,1
+2026-07-24,ameaça de morte,1
+2026-07-24,ameaça candidato,0
+2026-07-24,ameaça eleição,0
+2026-07-24,agredido eleitor,0
+2026-07-24,agressão eleição,0
+2026-07-24,atentado candidato,0
+2026-07-24,candidato baleado,0
+2026-07-24,vereador baleado,0
+2026-07-24,vereadora assassinada,0
+2026-07-24,candidato morto,0
+2026-07-24,tiro candidato,0
+2026-07-25,eleição,152
+2026-07-25,eleições,365
+2026-07-25,candidato,183
+2026-07-25,voto,104
+2026-07-25,violência política,3
+2026-07-25,violência eleitoral,0
+2026-07-25,ameaça de morte,0
+2026-07-25,ameaça candidato,0
+2026-07-25,ameaça eleição,1
+2026-07-25,agredido eleitor,0
+2026-07-25,agressão eleição,0
+2026-07-25,atentado candidato,0
+2026-07-25,candidato baleado,0
+2026-07-25,vereador baleado,0
+2026-07-25,vereadora assassinada,0
+2026-07-25,candidato morto,0
+2026-07-25,tiro candidato,0
+2026-07-26,eleição,94
+2026-07-26,eleições,163
+2026-07-26,candidato,132
+2026-07-26,voto,119
+2026-07-26,violência política,2
+2026-07-26,violência eleitoral,0
+2026-07-26,ameaça de morte,2
+2026-07-26,ameaça candidato,1
+2026-07-26,ameaça eleição,0
+2026-07-26,agredido eleitor,0
+2026-07-26,agressão eleição,0
+2026-07-26,atentado candidato,0
+2026-07-26,candidato baleado,0
+2026-07-26,vereador baleado,0
+2026-07-26,vereadora assassinada,0
+2026-07-26,candidato morto,0
+2026-07-26,tiro candidato,1
+2026-07-27,eleição,145
+2026-07-27,eleições,231
+2026-07-27,candidato,218
+2026-07-27,voto,246
+2026-07-27,violência política,8
+2026-07-27,violência eleitoral,1
+2026-07-27,ameaça de morte,7
+2026-07-27,ameaça candidato,1
+2026-07-27,ameaça eleição,0
+2026-07-27,agredido eleitor,0
+2026-07-27,agressão eleição,0
+2026-07-27,atentado candidato,0
+2026-07-27,candidato baleado,0
+2026-07-27,vereador baleado,0
+2026-07-27,vereadora assassinada,0
+2026-07-27,candidato morto,0
+2026-07-27,tiro candidato,1
+2026-07-28,eleição,129
+2026-07-28,eleições,177
+2026-07-28,candidato,150
+2026-07-28,voto,122
+2026-07-28,violência política,9
+2026-07-28,violência eleitoral,2
+2026-07-28,ameaça de morte,2
+2026-07-28,ameaça candidato,1
+2026-07-28,ameaça eleição,1
+2026-07-28,agredido eleitor,0
+2026-07-28,agressão eleição,0
+2026-07-28,atentado candidato,1
+2026-07-28,candidato baleado,0
+2026-07-28,vereador baleado,0
+2026-07-28,vereadora assassinada,0
+2026-07-28,candidato morto,0
+2026-07-28,tiro candidato,1
+2026-07-29,eleição,148
+2026-07-29,eleições,257
+2026-07-29,candidato,209
+2026-07-29,voto,162
+2026-07-29,violência política,11
+2026-07-29,violência eleitoral,0
+2026-07-29,ameaça de morte,2
+2026-07-29,ameaça candidato,1
+2026-07-29,ameaça eleição,1
+2026-07-29,agredido eleitor,0
+2026-07-29,agressão eleição,0
+2026-07-29,atentado candidato,0
+2026-07-29,candidato baleado,0
+2026-07-29,vereador baleado,0
+2026-07-29,vereadora assassinada,0
+2026-07-29,candidato morto,0
+2026-07-29,tiro candidato,0
+2026-07-30,eleição,183
+2026-07-30,eleições,330
+2026-07-30,candidato,164
+2026-07-30,voto,173
+2026-07-30,violência política,9
+2026-07-30,violência eleitoral,0
+2026-07-30,ameaça de morte,1
+2026-07-30,ameaça candidato,1
+2026-07-30,ameaça eleição,1
+2026-07-30,agredido eleitor,0
+2026-07-30,agressão eleição,0
+2026-07-30,atentado candidato,0
+2026-07-30,candidato baleado,0
+2026-07-30,vereador baleado,0
+2026-07-30,vereadora assassinada,0
+2026-07-30,candidato morto,0
+2026-07-30,tiro candidato,0
+2026-07-31,eleição,124
+2026-07-31,eleições,202
+2026-07-31,candidato,140
+2026-07-31,voto,104
+2026-07-31,violência política,5
+2026-07-31,violência eleitoral,0
+2026-07-31,ameaça de morte,5
+2026-07-31,ameaça candidato,0
+2026-07-31,ameaça eleição,0
+2026-07-31,agredido eleitor,0
+2026-07-31,agressão eleição,0
+2026-07-31,atentado candidato,0
+2026-07-31,candidato baleado,0
+2026-07-31,vereador baleado,0
+2026-07-31,vereadora assassinada,0
+2026-07-31,candidato morto,0
+2026-07-31,tiro candidato,0
+2026-08-01,eleição,91
+2026-08-01,eleições,184
+2026-08-01,candidato,175
+2026-08-01,voto,104
+2026-08-01,violência política,4
+2026-08-01,violência eleitoral,0
+2026-08-01,ameaça de morte,2
+2026-08-01,ameaça candidato,0
+2026-08-01,ameaça eleição,1
+2026-08-01,agredido eleitor,0
+2026-08-01,agressão eleição,0
+2026-08-01,atentado candidato,0
+2026-08-01,candidato baleado,0
+2026-08-01,vereador baleado,0
+2026-08-01,vereadora assassinada,0
+2026-08-01,candidato morto,0
+2026-08-01,tiro candidato,0
+2026-08-02,eleição,120
+2026-08-02,eleições,163
+2026-08-02,candidato,178
+2026-08-02,voto,121
+2026-08-02,violência política,3
+2026-08-02,violência eleitoral,0
+2026-08-02,ameaça de morte,0
+2026-08-02,ameaça candidato,0
+2026-08-02,ameaça eleição,0
+2026-08-02,agredido eleitor,0
+2026-08-02,agressão eleição,0
+2026-08-02,atentado candidato,0
+2026-08-02,candidato baleado,0
+2026-08-02,vereador baleado,0
+2026-08-02,vereadora assassinada,0
+2026-08-02,candidato morto,0
+2026-08-02,tiro candidato,0
+2026-08-03,eleição,145
+2026-08-03,eleições,242
+2026-08-03,candidato,203
+2026-08-03,voto,115
+2026-08-03,violência política,8
+2026-08-03,violência eleitoral,3
+2026-08-03,ameaça de morte,2
+2026-08-03,ameaça candidato,0
+2026-08-03,ameaça eleição,1
+2026-08-03,agredido eleitor,0
+2026-08-03,agressão eleição,0
+2026-08-03,atentado candidato,0
+2026-08-03,candidato baleado,0
+2026-08-03,vereador baleado,0
+2026-08-03,vereadora assassinada,0
+2026-08-03,candidato morto,1
+2026-08-03,tiro candidato,0
+2026-08-04,eleição,195
+2026-08-04,eleições,341
+2026-08-04,candidato,215
+2026-08-04,voto,84
+2026-08-04,violência política,5
+2026-08-04,violência eleitoral,2
+2026-08-04,ameaça de morte,0
+2026-08-04,ameaça candidato,1
+2026-08-04,ameaça eleição,0
+2026-08-04,agredido eleitor,0
+2026-08-04,agressão eleição,0
+2026-08-04,atentado candidato,1
+2026-08-04,candidato baleado,3
+2026-08-04,vereador baleado,0
+2026-08-04,vereadora assassinada,0
+2026-08-04,candidato morto,3
+2026-08-04,tiro candidato,0
+2026-08-05,eleição,178
+2026-08-05,eleições,306
+2026-08-05,candidato,315
+2026-08-05,voto,184
+2026-08-05,violência política,8
+2026-08-05,violência eleitoral,1
+2026-08-05,ameaça de morte,1
+2026-08-05,ameaça candidato,0
+2026-08-05,ameaça eleição,2
+2026-08-05,agredido eleitor,0
+2026-08-05,agressão eleição,0
+2026-08-05,atentado candidato,0
+2026-08-05,candidato baleado,1
+2026-08-05,vereador baleado,0
+2026-08-05,vereadora assassinada,0
+2026-08-05,candidato morto,1
+2026-08-05,tiro candidato,0
+2026-08-06,eleição,162
+2026-08-06,eleições,228
+2026-08-06,candidato,222
+2026-08-06,voto,117
+2026-08-06,violência política,7
+2026-08-06,violência eleitoral,3
+2026-08-06,ameaça de morte,3
+2026-08-06,ameaça candidato,1
+2026-08-06,ameaça eleição,0
+2026-08-06,agredido eleitor,0
+2026-08-06,agressão eleição,1
+2026-08-06,atentado candidato,0
+2026-08-06,candidato baleado,0
+2026-08-06,vereador baleado,0
+2026-08-06,vereadora assassinada,0
+2026-08-06,candidato morto,0
+2026-08-06,tiro candidato,0
+2026-08-07,eleição,125
+2026-08-07,eleições,178
+2026-08-07,candidato,211
+2026-08-07,voto,120
+2026-08-07,violência política,8
+2026-08-07,violência eleitoral,0
+2026-08-07,ameaça de morte,3
+2026-08-07,ameaça candidato,1
+2026-08-07,ameaça eleição,1
+2026-08-07,agredido eleitor,0
+2026-08-07,agressão eleição,0
+2026-08-07,atentado candidato,0
+2026-08-07,candidato baleado,0
+2026-08-07,vereador baleado,0
+2026-08-07,vereadora assassinada,0
+2026-08-07,candidato morto,0
+2026-08-07,tiro candidato,0
+2026-08-08,eleição,85
+2026-08-08,eleições,109
+2026-08-08,candidato,118
+2026-08-08,voto,69
+2026-08-08,violência política,3
+2026-08-08,violência eleitoral,1
+2026-08-08,ameaça de morte,3
+2026-08-08,ameaça candidato,0
+2026-08-08,ameaça eleição,1
+2026-08-08,agredido eleitor,0
+2026-08-08,agressão eleição,0
+2026-08-08,atentado candidato,0
+2026-08-08,candidato baleado,0
+2026-08-08,vereador baleado,0
+2026-08-08,vereadora assassinada,0
+2026-08-08,candidato morto,0
+2026-08-08,tiro candidato,0
+2026-08-09,eleição,108
+2026-08-09,eleições,157
+2026-08-09,candidato,202
+2026-08-09,voto,95
+2026-08-09,violência política,1
+2026-08-09,violência eleitoral,0
+2026-08-09,ameaça de morte,0
+2026-08-09,ameaça candidato,0
+2026-08-09,ameaça eleição,0
+2026-08-09,agredido eleitor,0
+2026-08-09,agressão eleição,0
+2026-08-09,atentado candidato,1
+2026-08-09,candidato baleado,0
+2026-08-09,vereador baleado,0
+2026-08-09,vereadora assassinada,0
+2026-08-09,candidato morto,0
+2026-08-09,tiro candidato,0
+2026-08-10,eleição,119
+2026-08-10,eleições,200
+2026-08-10,candidato,157
+2026-08-10,voto,112
+2026-08-10,violência política,7
+2026-08-10,violência eleitoral,0
+2026-08-10,ameaça de morte,1
+2026-08-10,ameaça candidato,0
+2026-08-10,ameaça eleição,1
+2026-08-10,agredido eleitor,0
+2026-08-10,agressão eleição,0
+2026-08-10,atentado candidato,0
+2026-08-10,candidato baleado,0
+2026-08-10,vereador baleado,0
+2026-08-10,vereadora assassinada,0
+2026-08-10,candidato morto,0
+2026-08-10,tiro candidato,5
+2026-08-11,eleição,111
+2026-08-11,eleições,203
+2026-08-11,candidato,206
+2026-08-11,voto,95
+2026-08-11,violência política,2
+2026-08-11,violência eleitoral,1
+2026-08-11,ameaça de morte,9
+2026-08-11,ameaça candidato,0
+2026-08-11,ameaça eleição,1
+2026-08-11,agredido eleitor,0
+2026-08-11,agressão eleição,0
+2026-08-11,atentado candidato,0
+2026-08-11,candidato baleado,0
+2026-08-11,vereador baleado,0
+2026-08-11,vereadora assassinada,0
+2026-08-11,candidato morto,0
+2026-08-11,tiro candidato,0
+2026-08-12,eleição,116
+2026-08-12,eleições,174
+2026-08-12,candidato,228
+2026-08-12,voto,92
+2026-08-12,violência política,10
+2026-08-12,violência eleitoral,1
+2026-08-12,ameaça de morte,3
+2026-08-12,ameaça candidato,1
+2026-08-12,ameaça eleição,0
+2026-08-12,agredido eleitor,0
+2026-08-12,agressão eleição,0
+2026-08-12,atentado candidato,0
+2026-08-12,candidato baleado,0
+2026-08-12,vereador baleado,0
+2026-08-12,vereadora assassinada,0
+2026-08-12,candidato morto,0
+2026-08-12,tiro candidato,0
+2026-08-13,eleição,181
+2026-08-13,eleições,242
+2026-08-13,candidato,344
+2026-08-13,voto,90
+2026-08-13,violência política,9
+2026-08-13,violência eleitoral,2
+2026-08-13,ameaça de morte,4
+2026-08-13,ameaça candidato,1
+2026-08-13,ameaça eleição,1
+2026-08-13,agredido eleitor,0
+2026-08-13,agressão eleição,0
+2026-08-13,atentado candidato,0
+2026-08-13,candidato baleado,0
+2026-08-13,vereador baleado,0
+2026-08-13,vereadora assassinada,0
+2026-08-13,candidato morto,1
+2026-08-13,tiro candidato,0
+2026-08-14,eleição,219
+2026-08-14,eleições,234
+2026-08-14,candidato,258
+2026-08-14,voto,111
+2026-08-14,violência política,3
+2026-08-14,violência eleitoral,2
+2026-08-14,ameaça de morte,5
+2026-08-14,ameaça candidato,0
+2026-08-14,ameaça eleição,4
+2026-08-14,agredido eleitor,0
+2026-08-14,agressão eleição,0
+2026-08-14,atentado candidato,1
+2026-08-14,candidato baleado,0
+2026-08-14,vereador baleado,0
+2026-08-14,vereadora assassinada,0
+2026-08-14,candidato morto,0
+2026-08-14,tiro candidato,0
+2026-08-15,eleição,119
+2026-08-15,eleições,282
+2026-08-15,candidato,179
+2026-08-15,voto,102
+2026-08-15,violência política,5
+2026-08-15,violência eleitoral,0
+2026-08-15,ameaça de morte,5
+2026-08-15,ameaça candidato,3
+2026-08-15,ameaça eleição,0
+2026-08-15,agredido eleitor,0
+2026-08-15,agressão eleição,0
+2026-08-15,atentado candidato,0
+2026-08-15,candidato baleado,0
+2026-08-15,vereador baleado,0
+2026-08-15,vereadora assassinada,0
+2026-08-15,candidato morto,1
+2026-08-15,tiro candidato,1
+2026-08-16,eleição,156
+2026-08-16,eleições,286
+2026-08-16,candidato,270
+2026-08-16,voto,191
+2026-08-16,violência política,5
+2026-08-16,violência eleitoral,1
+2026-08-16,ameaça de morte,0
+2026-08-16,ameaça candidato,0
+2026-08-16,ameaça eleição,0
+2026-08-16,agredido eleitor,0
+2026-08-16,agressão eleição,0
+2026-08-16,atentado candidato,0
+2026-08-16,candidato baleado,0
+2026-08-16,vereador baleado,0
+2026-08-16,vereadora assassinada,0
+2026-08-16,candidato morto,0
+2026-08-16,tiro candidato,0
+2026-08-17,eleição,206
+2026-08-17,eleições,367
+2026-08-17,candidato,336
+2026-08-17,voto,278
+2026-08-17,violência política,11
+2026-08-17,violência eleitoral,1
+2026-08-17,ameaça de morte,5
+2026-08-17,ameaça candidato,0
+2026-08-17,ameaça eleição,1
+2026-08-17,agredido eleitor,0
+2026-08-17,agressão eleição,0
+2026-08-17,atentado candidato,1
+2026-08-17,candidato baleado,0
+2026-08-17,vereador baleado,0
+2026-08-17,vereadora assassinada,0
+2026-08-17,candidato morto,0
+2026-08-17,tiro candidato,0
+2026-08-18,eleição,166
+2026-08-18,eleições,287
+2026-08-18,candidato,269
+2026-08-18,voto,176
+2026-08-18,violência política,12
+2026-08-18,violência eleitoral,1
+2026-08-18,ameaça de morte,2
+2026-08-18,ameaça candidato,1
+2026-08-18,ameaça eleição,1
+2026-08-18,agredido eleitor,0
+2026-08-18,agressão eleição,1
+2026-08-18,atentado candidato,0
+2026-08-18,candidato baleado,0
+2026-08-18,vereador baleado,0
+2026-08-18,vereadora assassinada,0
+2026-08-18,candidato morto,0
+2026-08-18,tiro candidato,0
+2026-08-19,eleição,165
+2026-08-19,eleições,374
+2026-08-19,candidato,294
+2026-08-19,voto,169
+2026-08-19,violência política,31
+2026-08-19,violência eleitoral,2
+2026-08-19,ameaça de morte,2
+2026-08-19,ameaça candidato,1
+2026-08-19,ameaça eleição,8
+2026-08-19,agredido eleitor,0
+2026-08-19,agressão eleição,0
+2026-08-19,atentado candidato,0
+2026-08-19,candidato baleado,0
+2026-08-19,vereador baleado,0
+2026-08-19,vereadora assassinada,0
+2026-08-19,candidato morto,0
+2026-08-19,tiro candidato,0
+2026-08-20,eleição,170
+2026-08-20,eleições,332
+2026-08-20,candidato,341
+2026-08-20,voto,180
+2026-08-20,violência política,16
+2026-08-20,violência eleitoral,2
+2026-08-20,ameaça de morte,6
+2026-08-20,ameaça candidato,1
+2026-08-20,ameaça eleição,0
+2026-08-20,agredido eleitor,0
+2026-08-20,agressão eleição,0
+2026-08-20,atentado candidato,0
+2026-08-20,candidato baleado,0
+2026-08-20,vereador baleado,0
+2026-08-20,vereadora assassinada,0
+2026-08-20,candidato morto,1
+2026-08-20,tiro candidato,0
+2026-08-21,eleição,234
+2026-08-21,eleições,299
+2026-08-21,candidato,304
+2026-08-21,voto,397
+2026-08-21,violência política,6
+2026-08-21,violência eleitoral,1
+2026-08-21,ameaça de morte,4
+2026-08-21,ameaça candidato,1
+2026-08-21,ameaça eleição,1
+2026-08-21,agredido eleitor,0
+2026-08-21,agressão eleição,0
+2026-08-21,atentado candidato,1
+2026-08-21,candidato baleado,0
+2026-08-21,vereador baleado,1
+2026-08-21,vereadora assassinada,0
+2026-08-21,candidato morto,0
+2026-08-21,tiro candidato,1
+2026-08-22,eleição,133
+2026-08-22,eleições,224
+2026-08-22,candidato,208
+2026-08-22,voto,161
+2026-08-22,violência política,10
+2026-08-22,violência eleitoral,4
+2026-08-22,ameaça de morte,0
+2026-08-22,ameaça candidato,5
+2026-08-22,ameaça eleição,1
+2026-08-22,agredido eleitor,0
+2026-08-22,agressão eleição,0
+2026-08-22,atentado candidato,0
+2026-08-22,candidato baleado,0
+2026-08-22,vereador baleado,0
+2026-08-22,vereadora assassinada,0
+2026-08-22,candidato morto,0
+2026-08-22,tiro candidato,0
+2026-08-23,eleição,133
+2026-08-23,eleições,240
+2026-08-23,candidato,290
+2026-08-23,voto,173
+2026-08-23,violência política,3
+2026-08-23,violência eleitoral,1
+2026-08-23,ameaça de morte,2
+2026-08-23,ameaça candidato,1
+2026-08-23,ameaça eleição,2
+2026-08-23,agredido eleitor,0
+2026-08-23,agressão eleição,0
+2026-08-23,atentado candidato,0
+2026-08-23,candidato baleado,0
+2026-08-23,vereador baleado,0
+2026-08-23,vereadora assassinada,0
+2026-08-23,candidato morto,0
+2026-08-23,tiro candidato,0
+2026-08-24,eleição,183
+2026-08-24,eleições,342
+2026-08-24,candidato,410
+2026-08-24,voto,188
+2026-08-24,violência política,3
+2026-08-24,violência eleitoral,1
+2026-08-24,ameaça de morte,3
+2026-08-24,ameaça candidato,0
+2026-08-24,ameaça eleição,3
+2026-08-24,agredido eleitor,0
+2026-08-24,agressão eleição,0
+2026-08-24,atentado candidato,0
+2026-08-24,candidato baleado,0
+2026-08-24,vereador baleado,0
+2026-08-24,vereadora assassinada,0
+2026-08-24,candidato morto,1
+2026-08-24,tiro candidato,0
+2026-08-25,eleição,196
+2026-08-25,eleições,307
+2026-08-25,candidato,388
+2026-08-25,voto,257
+2026-08-25,violência política,9
+2026-08-25,violência eleitoral,1
+2026-08-25,ameaça de morte,2
+2026-08-25,ameaça candidato,1
+2026-08-25,ameaça eleição,2
+2026-08-25,agredido eleitor,0
+2026-08-25,agressão eleição,0
+2026-08-25,atentado candidato,0
+2026-08-25,candidato baleado,0
+2026-08-25,vereador baleado,0
+2026-08-25,vereadora assassinada,0
+2026-08-25,candidato morto,1
+2026-08-25,tiro candidato,0
+2026-08-26,eleição,182
+2026-08-26,eleições,337
+2026-08-26,candidato,359
+2026-08-26,voto,184
+2026-08-26,violência política,8
+2026-08-26,violência eleitoral,1
+2026-08-26,ameaça de morte,2
+2026-08-26,ameaça candidato,0
+2026-08-26,ameaça eleição,0
+2026-08-26,agredido eleitor,0
+2026-08-26,agressão eleição,1
+2026-08-26,atentado candidato,0
+2026-08-26,candidato baleado,0
+2026-08-26,vereador baleado,0
+2026-08-26,vereadora assassinada,1
+2026-08-26,candidato morto,1
+2026-08-26,tiro candidato,0
+2026-08-27,eleição,210
+2026-08-27,eleições,346
+2026-08-27,candidato,559
+2026-08-27,voto,251
+2026-08-27,violência política,7
+2026-08-27,violência eleitoral,1
+2026-08-27,ameaça de morte,0
+2026-08-27,ameaça candidato,2
+2026-08-27,ameaça eleição,0
+2026-08-27,agredido eleitor,0
+2026-08-27,agressão eleição,0
+2026-08-27,atentado candidato,0
+2026-08-27,candidato baleado,0
+2026-08-27,vereador baleado,0
+2026-08-27,vereadora assassinada,0
+2026-08-27,candidato morto,1
+2026-08-27,tiro candidato,0
+2026-08-28,eleição,252
+2026-08-28,eleições,363
+2026-08-28,candidato,580
+2026-08-28,voto,325
+2026-08-28,violência política,5
+2026-08-28,violência eleitoral,1
+2026-08-28,ameaça de morte,2
+2026-08-28,ameaça candidato,1
+2026-08-28,ameaça eleição,2
+2026-08-28,agredido eleitor,0
+2026-08-28,agressão eleição,0
+2026-08-28,atentado candidato,0
+2026-08-28,candidato baleado,0
+2026-08-28,vereador baleado,0
+2026-08-28,vereadora assassinada,0
+2026-08-28,candidato morto,1
+2026-08-28,tiro candidato,0
+2026-08-29,eleição,144
+2026-08-29,eleições,235
+2026-08-29,candidato,446
+2026-08-29,voto,196
+2026-08-29,violência política,9
+2026-08-29,violência eleitoral,0
+2026-08-29,ameaça de morte,3
+2026-08-29,ameaça candidato,0
+2026-08-29,ameaça eleição,0
+2026-08-29,agredido eleitor,0
+2026-08-29,agressão eleição,0
+2026-08-29,atentado candidato,0
+2026-08-29,candidato baleado,0
+2026-08-29,vereador baleado,0
+2026-08-29,vereadora assassinada,0
+2026-08-29,candidato morto,2
+2026-08-29,tiro candidato,0
+2026-08-30,eleição,124
+2026-08-30,eleições,186
+2026-08-30,candidato,267
+2026-08-30,voto,161
+2026-08-30,violência política,5
+2026-08-30,violência eleitoral,0
+2026-08-30,ameaça de morte,1
+2026-08-30,ameaça candidato,3
+2026-08-30,ameaça eleição,0
+2026-08-30,agredido eleitor,0
+2026-08-30,agressão eleição,0
+2026-08-30,atentado candidato,0
+2026-08-30,candidato baleado,0
+2026-08-30,vereador baleado,0
+2026-08-30,vereadora assassinada,0
+2026-08-30,candidato morto,0
+2026-08-30,tiro candidato,0
+2026-08-31,eleição,207
+2026-08-31,eleições,434
+2026-08-31,candidato,514
+2026-08-31,voto,265
+2026-08-31,violência política,5
+2026-08-31,violência eleitoral,0
+2026-08-31,ameaça de morte,1
+2026-08-31,ameaça candidato,6
+2026-08-31,ameaça eleição,0
+2026-08-31,agredido eleitor,0
+2026-08-31,agressão eleição,0
+2026-08-31,atentado candidato,1
+2026-08-31,candidato baleado,0
+2026-08-31,vereador baleado,0
+2026-08-31,vereadora assassinada,0
+2026-08-31,candidato morto,1
+2026-08-31,tiro candidato,0
+2026-09-01,eleição,275
+2026-09-01,eleições,401
+2026-09-01,candidato,480
+2026-09-01,voto,181
+2026-09-01,violência política,7
+2026-09-01,violência eleitoral,0
+2026-09-01,ameaça de morte,4
+2026-09-01,ameaça candidato,1
+2026-09-01,ameaça eleição,0
+2026-09-01,agredido eleitor,0
+2026-09-01,agressão eleição,0
+2026-09-01,atentado candidato,0
+2026-09-01,candidato baleado,0
+2026-09-01,vereador baleado,0
+2026-09-01,vereadora assassinada,0
+2026-09-01,candidato morto,1
+2026-09-01,tiro candidato,1
+2026-09-02,eleição,203
+2026-09-02,eleições,344
+2026-09-02,candidato,293
+2026-09-02,voto,188
+2026-09-02,violência política,6
+2026-09-02,violência eleitoral,1
+2026-09-02,ameaça de morte,0
+2026-09-02,ameaça candidato,1
+2026-09-02,ameaça eleição,0
+2026-09-02,agredido eleitor,0
+2026-09-02,agressão eleição,0
+2026-09-02,atentado candidato,0
+2026-09-02,candidato baleado,0
+2026-09-02,vereador baleado,0
+2026-09-02,vereadora assassinada,0
+2026-09-02,candidato morto,0
+2026-09-02,tiro candidato,0
+2026-09-03,eleição,239
+2026-09-03,eleições,385
+2026-09-03,candidato,261
+2026-09-03,voto,187
+2026-09-03,violência política,6
+2026-09-03,violência eleitoral,2
+2026-09-03,ameaça de morte,2
+2026-09-03,ameaça candidato,2
+2026-09-03,ameaça eleição,1
+2026-09-03,agredido eleitor,0
+2026-09-03,agressão eleição,0
+2026-09-03,atentado candidato,0
+2026-09-03,candidato baleado,0
+2026-09-03,vereador baleado,0
+2026-09-03,vereadora assassinada,0
+2026-09-03,candidato morto,0
+2026-09-03,tiro candidato,0
+2026-09-04,eleição,198
+2026-09-04,eleições,319
+2026-09-04,candidato,241
+2026-09-04,voto,213
+2026-09-04,violência política,7
+2026-09-04,violência eleitoral,1
+2026-09-04,ameaça de morte,2
+2026-09-04,ameaça candidato,0
+2026-09-04,ameaça eleição,0
+2026-09-04,agredido eleitor,1
+2026-09-04,agressão eleição,0
+2026-09-04,atentado candidato,0
+2026-09-04,candidato baleado,0
+2026-09-04,vereador baleado,0
+2026-09-04,vereadora assassinada,0
+2026-09-04,candidato morto,0
+2026-09-04,tiro candidato,3
+2026-09-05,eleição,174
+2026-09-05,eleições,221
+2026-09-05,candidato,235
+2026-09-05,voto,281
+2026-09-05,violência política,9
+2026-09-05,violência eleitoral,1
+2026-09-05,ameaça de morte,3
+2026-09-05,ameaça candidato,1
+2026-09-05,ameaça eleição,0
+2026-09-05,agredido eleitor,1
+2026-09-05,agressão eleição,0
+2026-09-05,atentado candidato,0
+2026-09-05,candidato baleado,0
+2026-09-05,vereador baleado,0
+2026-09-05,vereadora assassinada,0
+2026-09-05,candidato morto,0
+2026-09-05,tiro candidato,2
+2026-09-06,eleição,197
+2026-09-06,eleições,179
+2026-09-06,candidato,156
+2026-09-06,voto,168
+2026-09-06,violência política,7
+2026-09-06,violência eleitoral,1
+2026-09-06,ameaça de morte,1
+2026-09-06,ameaça candidato,0
+2026-09-06,ameaça eleição,0
+2026-09-06,agredido eleitor,0
+2026-09-06,agressão eleição,0
+2026-09-06,atentado candidato,1
+2026-09-06,candidato baleado,0
+2026-09-06,vereador baleado,0
+2026-09-06,vereadora assassinada,1
+2026-09-06,candidato morto,0
+2026-09-06,tiro candidato,0
+2026-09-07,eleição,221
+2026-09-07,eleições,294
+2026-09-07,candidato,280
+2026-09-07,voto,215
+2026-09-07,violência política,4
+2026-09-07,violência eleitoral,3
+2026-09-07,ameaça de morte,4
+2026-09-07,ameaça candidato,1
+2026-09-07,ameaça eleição,3
+2026-09-07,agredido eleitor,0
+2026-09-07,agressão eleição,0
+2026-09-07,atentado candidato,0
+2026-09-07,candidato baleado,0
+2026-09-07,vereador baleado,0
+2026-09-07,vereadora assassinada,0
+2026-09-07,candidato morto,0
+2026-09-07,tiro candidato,0
+2026-09-08,eleição,353
+2026-09-08,eleições,564
+2026-09-08,candidato,257
+2026-09-08,voto,258
+2026-09-08,violência política,4
+2026-09-08,violência eleitoral,2
+2026-09-08,ameaça de morte,5
+2026-09-08,ameaça candidato,0
+2026-09-08,ameaça eleição,1
+2026-09-08,agredido eleitor,0
+2026-09-08,agressão eleição,0
+2026-09-08,atentado candidato,0
+2026-09-08,candidato baleado,0
+2026-09-08,vereador baleado,0
+2026-09-08,vereadora assassinada,0
+2026-09-08,candidato morto,0
+2026-09-08,tiro candidato,0
+2026-09-09,eleição,261
+2026-09-09,eleições,366
+2026-09-09,candidato,287
+2026-09-09,voto,194
+2026-09-09,violência política,9
+2026-09-09,violência eleitoral,1
+2026-09-09,ameaça de morte,6
+2026-09-09,ameaça candidato,0
+2026-09-09,ameaça eleição,0
+2026-09-09,agredido eleitor,0
+2026-09-09,agressão eleição,0
+2026-09-09,atentado candidato,2
+2026-09-09,candidato baleado,0
+2026-09-09,vereador baleado,0
+2026-09-09,vereadora assassinada,0
+2026-09-09,candidato morto,0
+2026-09-09,tiro candidato,1
+2026-09-10,eleição,284
+2026-09-10,eleições,380
+2026-09-10,candidato,288
+2026-09-10,voto,254
+2026-09-10,violência política,8
+2026-09-10,violência eleitoral,0
+2026-09-10,ameaça de morte,3
+2026-09-10,ameaça candidato,0
+2026-09-10,ameaça eleição,1
+2026-09-10,agredido eleitor,0
+2026-09-10,agressão eleição,0
+2026-09-10,atentado candidato,1
+2026-09-10,candidato baleado,0
+2026-09-10,vereador baleado,0
+2026-09-10,vereadora assassinada,0
+2026-09-10,candidato morto,0
+2026-09-10,tiro candidato,1
+2026-09-11,eleição,288
+2026-09-11,eleições,388
+2026-09-11,candidato,320
+2026-09-11,voto,223
+2026-09-11,violência política,7
+2026-09-11,violência eleitoral,3
+2026-09-11,ameaça de morte,1
+2026-09-11,ameaça candidato,1
+2026-09-11,ameaça eleição,2
+2026-09-11,agredido eleitor,0
+2026-09-11,agressão eleição,0
+2026-09-11,atentado candidato,0
+2026-09-11,candidato baleado,0
+2026-09-11,vereador baleado,0
+2026-09-11,vereadora assassinada,0
+2026-09-11,candidato morto,0
+2026-09-11,tiro candidato,0
+2026-09-12,eleição,180
+2026-09-12,eleições,221
+2026-09-12,candidato,250
+2026-09-12,voto,176
+2026-09-12,violência política,6
+2026-09-12,violência eleitoral,1
+2026-09-12,ameaça de morte,4
+2026-09-12,ameaça candidato,0
+2026-09-12,ameaça eleição,1
+2026-09-12,agredido eleitor,1
+2026-09-12,agressão eleição,0
+2026-09-12,atentado candidato,1
+2026-09-12,candidato baleado,0
+2026-09-12,vereador baleado,0
+2026-09-12,vereadora assassinada,0
+2026-09-12,candidato morto,1
+2026-09-12,tiro candidato,0
+2026-09-13,eleição,167
+2026-09-13,eleições,238
+2026-09-13,candidato,209
+2026-09-13,voto,196
+2026-09-13,violência política,11
+2026-09-13,violência eleitoral,1
+2026-09-13,ameaça de morte,2
+2026-09-13,ameaça candidato,0
+2026-09-13,ameaça eleição,0
+2026-09-13,agredido eleitor,0
+2026-09-13,agressão eleição,0
+2026-09-13,atentado candidato,0
+2026-09-13,candidato baleado,0
+2026-09-13,vereador baleado,0
+2026-09-13,vereadora assassinada,0
+2026-09-13,candidato morto,0
+2026-09-13,tiro candidato,0
+2026-09-14,eleição,269
+2026-09-14,eleições,351
+2026-09-14,candidato,382
+2026-09-14,voto,389
+2026-09-14,violência política,6
+2026-09-14,violência eleitoral,3
+2026-09-14,ameaça de morte,2
+2026-09-14,ameaça candidato,2
+2026-09-14,ameaça eleição,1
+2026-09-14,agredido eleitor,0
+2026-09-14,agressão eleição,0
+2026-09-14,atentado candidato,0
+2026-09-14,candidato baleado,0
+2026-09-14,vereador baleado,0
+2026-09-14,vereadora assassinada,0
+2026-09-14,candidato morto,0
+2026-09-14,tiro candidato,0
+2026-09-15,eleição,299
+2026-09-15,eleições,391
+2026-09-15,candidato,377
+2026-09-15,voto,507
+2026-09-15,violência política,6
+2026-09-15,violência eleitoral,2
+2026-09-15,ameaça de morte,0
+2026-09-15,ameaça candidato,3
+2026-09-15,ameaça eleição,1
+2026-09-15,agredido eleitor,0
+2026-09-15,agressão eleição,0
+2026-09-15,atentado candidato,0
+2026-09-15,candidato baleado,0
+2026-09-15,vereador baleado,0
+2026-09-15,vereadora assassinada,0
+2026-09-15,candidato morto,0
+2026-09-15,tiro candidato,1
+2026-09-16,eleição,300
+2026-09-16,eleições,360
+2026-09-16,candidato,358
+2026-09-16,voto,298
+2026-09-16,violência política,10
+2026-09-16,violência eleitoral,4
+2026-09-16,ameaça de morte,5
+2026-09-16,ameaça candidato,1
+2026-09-16,ameaça eleição,1
+2026-09-16,agredido eleitor,0
+2026-09-16,agressão eleição,0
+2026-09-16,atentado candidato,1
+2026-09-16,candidato baleado,0
+2026-09-16,vereador baleado,0
+2026-09-16,vereadora assassinada,0
+2026-09-16,candidato morto,0
+2026-09-16,tiro candidato,0
+2026-09-17,eleição,429
+2026-09-17,eleições,496
+2026-09-17,candidato,450
+2026-09-17,voto,322
+2026-09-17,violência política,12
+2026-09-17,violência eleitoral,2
+2026-09-17,ameaça de morte,11
+2026-09-17,ameaça candidato,0
+2026-09-17,ameaça eleição,1
+2026-09-17,agredido eleitor,1
+2026-09-17,agressão eleição,0
+2026-09-17,atentado candidato,0
+2026-09-17,candidato baleado,0
+2026-09-17,vereador baleado,0
+2026-09-17,vereadora assassinada,0
+2026-09-17,candidato morto,1
+2026-09-17,tiro candidato,0
+2026-09-18,eleição,296
+2026-09-18,eleições,408
+2026-09-18,candidato,383
+2026-09-18,voto,307
+2026-09-18,violência política,7
+2026-09-18,violência eleitoral,4
+2026-09-18,ameaça de morte,7
+2026-09-18,ameaça candidato,0
+2026-09-18,ameaça eleição,1
+2026-09-18,agredido eleitor,0
+2026-09-18,agressão eleição,0
+2026-09-18,atentado candidato,0
+2026-09-18,candidato baleado,0
+2026-09-18,vereador baleado,0
+2026-09-18,vereadora assassinada,0
+2026-09-18,candidato morto,1
+2026-09-18,tiro candidato,1
+2026-09-19,eleição,238
+2026-09-19,eleições,374
+2026-09-19,candidato,268
+2026-09-19,voto,263
+2026-09-19,violência política,4
+2026-09-19,violência eleitoral,0
+2026-09-19,ameaça de morte,0
+2026-09-19,ameaça candidato,4
+2026-09-19,ameaça eleição,0
+2026-09-19,agredido eleitor,0
+2026-09-19,agressão eleição,0
+2026-09-19,atentado candidato,0
+2026-09-19,candidato baleado,0
+2026-09-19,vereador baleado,0
+2026-09-19,vereadora assassinada,0
+2026-09-19,candidato morto,0
+2026-09-19,tiro candidato,0
+2026-09-20,eleição,246
+2026-09-20,eleições,334
+2026-09-20,candidato,178
+2026-09-20,voto,272
+2026-09-20,violência política,5
+2026-09-20,violência eleitoral,1
+2026-09-20,ameaça de morte,0
+2026-09-20,ameaça candidato,2
+2026-09-20,ameaça eleição,0
+2026-09-20,agredido eleitor,0
+2026-09-20,agressão eleição,0
+2026-09-20,atentado candidato,0
+2026-09-20,candidato baleado,0
+2026-09-20,vereador baleado,0
+2026-09-20,vereadora assassinada,0
+2026-09-20,candidato morto,1
+2026-09-20,tiro candidato,0
+2026-09-21,eleição,334
+2026-09-21,eleições,454
+2026-09-21,candidato,342
+2026-09-21,voto,351
+2026-09-21,violência política,6
+2026-09-21,violência eleitoral,3
+2026-09-21,ameaça de morte,2
+2026-09-21,ameaça candidato,0
+2026-09-21,ameaça eleição,2
+2026-09-21,agredido eleitor,0
+2026-09-21,agressão eleição,0
+2026-09-21,atentado candidato,0
+2026-09-21,candidato baleado,0
+2026-09-21,vereador baleado,0
+2026-09-21,vereadora assassinada,0
+2026-09-21,candidato morto,0
+2026-09-21,tiro candidato,0
+2026-09-22,eleição,351
+2026-09-22,eleições,568
+2026-09-22,candidato,325
+2026-09-22,voto,370
+2026-09-22,violência política,13
+2026-09-22,violência eleitoral,4
+2026-09-22,ameaça de morte,3
+2026-09-22,ameaça candidato,0
+2026-09-22,ameaça eleição,2
+2026-09-22,agredido eleitor,1
+2026-09-22,agressão eleição,0
+2026-09-22,atentado candidato,0
+2026-09-22,candidato baleado,0
+2026-09-22,vereador baleado,0
+2026-09-22,vereadora assassinada,0
+2026-09-22,candidato morto,0
+2026-09-22,tiro candidato,0
+2026-09-23,eleição,453
+2026-09-23,eleições,547
+2026-09-23,candidato,379
+2026-09-23,voto,366
+2026-09-23,violência política,18
+2026-09-23,violência eleitoral,8
+2026-09-23,ameaça de morte,3
+2026-09-23,ameaça candidato,2
+2026-09-23,ameaça eleição,1
+2026-09-23,agredido eleitor,0
+2026-09-23,agressão eleição,0
+2026-09-23,atentado candidato,0
+2026-09-23,candidato baleado,0
+2026-09-23,vereador baleado,0
+2026-09-23,vereadora assassinada,1
+2026-09-23,candidato morto,0
+2026-09-23,tiro candidato,0
+2026-09-24,eleição,530
+2026-09-24,eleições,575
+2026-09-24,candidato,482
+2026-09-24,voto,435
+2026-09-24,violência política,12
+2026-09-24,violência eleitoral,5
+2026-09-24,ameaça de morte,7
+2026-09-24,ameaça candidato,0
+2026-09-24,ameaça eleição,0
+2026-09-24,agredido eleitor,0
+2026-09-24,agressão eleição,0
+2026-09-24,atentado candidato,0
+2026-09-24,candidato baleado,0
+2026-09-24,vereador baleado,0
+2026-09-24,vereadora assassinada,0
+2026-09-24,candidato morto,4
+2026-09-24,tiro candidato,1
+2026-09-25,eleição,624
+2026-09-25,eleições,618
+2026-09-25,candidato,413
+2026-09-25,voto,445
+2026-09-25,violência política,3
+2026-09-25,violência eleitoral,1
+2026-09-25,ameaça de morte,0
+2026-09-25,ameaça candidato,1
+2026-09-25,ameaça eleição,4
+2026-09-25,agredido eleitor,0
+2026-09-25,agressão eleição,0
+2026-09-25,atentado candidato,0
+2026-09-25,candidato baleado,1
+2026-09-25,vereador baleado,0
+2026-09-25,vereadora assassinada,0
+2026-09-25,candidato morto,1
+2026-09-25,tiro candidato,0
+2026-09-26,eleição,452
+2026-09-26,eleições,428
+2026-09-26,candidato,327
+2026-09-26,voto,391
+2026-09-26,violência política,3
+2026-09-26,violência eleitoral,0
+2026-09-26,ameaça de morte,2
+2026-09-26,ameaça candidato,0
+2026-09-26,ameaça eleição,1
+2026-09-26,agredido eleitor,0
+2026-09-26,agressão eleição,0
+2026-09-26,atentado candidato,0
+2026-09-26,candidato baleado,0
+2026-09-26,vereador baleado,0
+2026-09-26,vereadora assassinada,0
+2026-09-26,candidato morto,0
+2026-09-26,tiro candidato,3
+2026-09-27,eleição,455
+2026-09-27,eleições,440
+2026-09-27,candidato,412
+2026-09-27,voto,506
+2026-09-27,violência política,2
+2026-09-27,violência eleitoral,0
+2026-09-27,ameaça de morte,0
+2026-09-27,ameaça candidato,0
+2026-09-27,ameaça eleição,0
+2026-09-27,agredido eleitor,0
+2026-09-27,agressão eleição,0
+2026-09-27,atentado candidato,0
+2026-09-27,candidato baleado,0
+2026-09-27,vereador baleado,0
+2026-09-27,vereadora assassinada,0
+2026-09-27,candidato morto,0
+2026-09-27,tiro candidato,1
+2026-09-28,eleição,661
+2026-09-28,eleições,767
+2026-09-28,candidato,554
+2026-09-28,voto,634
+2026-09-28,violência política,8
+2026-09-28,violência eleitoral,3
+2026-09-28,ameaça de morte,26
+2026-09-28,ameaça candidato,2
+2026-09-28,ameaça eleição,1
+2026-09-28,agredido eleitor,0
+2026-09-28,agressão eleição,0
+2026-09-28,atentado candidato,0
+2026-09-28,candidato baleado,0
+2026-09-28,vereador baleado,0
+2026-09-28,vereadora assassinada,0
+2026-09-28,candidato morto,3
+2026-09-28,tiro candidato,2
+2026-09-29,eleição,734
+2026-09-29,eleições,772
+2026-09-29,candidato,625
+2026-09-29,voto,596
+2026-09-29,violência política,14
+2026-09-29,violência eleitoral,4
+2026-09-29,ameaça de morte,1
+2026-09-29,ameaça candidato,4
+2026-09-29,ameaça eleição,2
+2026-09-29,agredido eleitor,0
+2026-09-29,agressão eleição,0
+2026-09-29,atentado candidato,1
+2026-09-29,candidato baleado,0
+2026-09-29,vereador baleado,0
+2026-09-29,vereadora assassinada,0
+2026-09-29,candidato morto,0
+2026-09-29,tiro candidato,2
+2026-09-30,eleição,743
+2026-09-30,eleições,732
+2026-09-30,candidato,623
+2026-09-30,voto,626
+2026-09-30,violência política,14
+2026-09-30,violência eleitoral,5
+2026-09-30,ameaça de morte,6
+2026-09-30,ameaça candidato,6
+2026-09-30,ameaça eleição,5
+2026-09-30,agredido eleitor,0
+2026-09-30,agressão eleição,0
+2026-09-30,atentado candidato,0
+2026-09-30,candidato baleado,0
+2026-09-30,vereador baleado,0
+2026-09-30,vereadora assassinada,0
+2026-09-30,candidato morto,3
+2026-09-30,tiro candidato,0
+2026-10-01,eleição,942
+2026-10-01,eleições,1091
+2026-10-01,candidato,759
+2026-10-01,voto,778
+2026-10-01,violência política,24
+2026-10-01,violência eleitoral,11
+2026-10-01,ameaça de morte,4
+2026-10-01,ameaça candidato,1
+2026-10-01,ameaça eleição,3
+2026-10-01,agredido eleitor,0
+2026-10-01,agressão eleição,0
+2026-10-01,atentado candidato,0
+2026-10-01,candidato baleado,0
+2026-10-01,vereador baleado,0
+2026-10-01,vereadora assassinada,0
+2026-10-01,candidato morto,2
+2026-10-01,tiro candidato,0
+2026-10-02,eleição,987
+2026-10-02,eleições,1187
+2026-10-02,candidato,644
+2026-10-02,voto,892
+2026-10-02,violência política,16
+2026-10-02,violência eleitoral,1
+2026-10-02,ameaça de morte,7
+2026-10-02,ameaça candidato,4
+2026-10-02,ameaça eleição,11
+2026-10-02,agredido eleitor,0
+2026-10-02,agressão eleição,0
+2026-10-02,atentado candidato,2
+2026-10-02,candidato baleado,0
+2026-10-02,vereador baleado,0
+2026-10-02,vereadora assassinada,0
+2026-10-02,candidato morto,2
+2026-10-02,tiro candidato,0
+2026-10-03,eleição,1225
+2026-10-03,eleições,1248
+2026-10-03,candidato,512
+2026-10-03,voto,1559
+2026-10-03,violência política,14
+2026-10-03,violência eleitoral,3
+2026-10-03,ameaça de morte,1
+2026-10-03,ameaça candidato,2
+2026-10-03,ameaça eleição,1
+2026-10-03,agredido eleitor,0
+2026-10-03,agressão eleição,1
+2026-10-03,atentado candidato,0
+2026-10-03,candidato baleado,2
+2026-10-03,vereador baleado,0
+2026-10-03,vereadora assassinada,0
+2026-10-03,candidato morto,1
+2026-10-03,tiro candidato,1
+2026-10-06,eleição,1159
+2026-10-06,eleições,10000
+2026-10-06,candidato,451
+2026-10-06,voto,1197
+2026-10-06,violência política,13
+2026-10-06,violência eleitoral,4
+2026-10-06,ameaça de morte,6
+2026-10-06,ameaça candidato,4
+2026-10-06,ameaça eleição,5
+2026-10-06,agredido eleitor,0
+2026-10-06,agressão eleição,0
+2026-10-06,atentado candidato,0
+2026-10-06,candidato baleado,0
+2026-10-06,vereador baleado,0
+2026-10-06,vereadora assassinada,0
+2026-10-06,candidato morto,2
+2026-10-06,tiro candidato,0
+2026-10-07,eleição,742
+2026-10-07,eleições,961
+2026-10-07,candidato,347
+2026-10-07,voto,1117
+2026-10-07,violência política,13
+2026-10-07,violência eleitoral,7
+2026-10-07,ameaça de morte,3
+2026-10-07,ameaça candidato,1
+2026-10-07,ameaça eleição,4
+2026-10-07,agredido eleitor,0
+2026-10-07,agressão eleição,1
+2026-10-07,atentado candidato,0
+2026-10-07,candidato baleado,0
+2026-10-07,vereador baleado,0
+2026-10-07,vereadora assassinada,0
+2026-10-07,candidato morto,0
+2026-10-07,tiro candidato,1
+2026-10-08,eleição,840
+2026-10-08,eleições,828
+2026-10-08,candidato,471
+2026-10-08,voto,1151
+2026-10-08,violência política,17
+2026-10-08,violência eleitoral,0
+2026-10-08,ameaça de morte,15
+2026-10-08,ameaça candidato,8
+2026-10-08,ameaça eleição,4
+2026-10-08,agredido eleitor,0
+2026-10-08,agressão eleição,0
+2026-10-08,atentado candidato,0
+2026-10-08,candidato baleado,0
+2026-10-08,vereador baleado,0
+2026-10-08,vereadora assassinada,0
+2026-10-08,candidato morto,0
+2026-10-08,tiro candidato,0
+2026-10-09,eleição,641
+2026-10-09,eleições,672
+2026-10-09,candidato,326
+2026-10-09,voto,934
+2026-10-09,violência política,18
+2026-10-09,violência eleitoral,0
+2026-10-09,ameaça de morte,20
+2026-10-09,ameaça candidato,13
+2026-10-09,ameaça eleição,3
+2026-10-09,agredido eleitor,0
+2026-10-09,agressão eleição,0
+2026-10-09,atentado candidato,1
+2026-10-09,candidato baleado,0
+2026-10-09,vereador baleado,0
+2026-10-09,vereadora assassinada,0
+2026-10-09,candidato morto,0
+2026-10-09,tiro candidato,2
+2026-10-10,eleição,459
+2026-10-10,eleições,485
+2026-10-10,candidato,247
+2026-10-10,voto,576
+2026-10-10,violência política,10
+2026-10-10,violência eleitoral,1
+2026-10-10,ameaça de morte,12
+2026-10-10,ameaça candidato,6
+2026-10-10,ameaça eleição,4
+2026-10-10,agredido eleitor,0
+2026-10-10,agressão eleição,1
+2026-10-10,atentado candidato,0
+2026-10-10,candidato baleado,0
+2026-10-10,vereador baleado,0
+2026-10-10,vereadora assassinada,0
+2026-10-10,candidato morto,0
+2026-10-10,tiro candidato,0
+2026-10-11,eleição,612
+2026-10-11,eleições,530
+2026-10-11,candidato,284
+2026-10-11,voto,655
+2026-10-11,violência política,7
+2026-10-11,violência eleitoral,2
+2026-10-11,ameaça de morte,5
+2026-10-11,ameaça candidato,0
+2026-10-11,ameaça eleição,1
+2026-10-11,agredido eleitor,0
+2026-10-11,agressão eleição,0
+2026-10-11,atentado candidato,0
+2026-10-11,candidato baleado,0
+2026-10-11,vereador baleado,0
+2026-10-11,vereadora assassinada,0
+2026-10-11,candidato morto,0
+2026-10-11,tiro candidato,1
+2026-10-12,eleição,465
+2026-10-12,eleições,498
+2026-10-12,candidato,260
+2026-10-12,voto,657
+2026-10-12,violência política,5
+2026-10-12,violência eleitoral,1
+2026-10-12,ameaça de morte,11
+2026-10-12,ameaça candidato,1
+2026-10-12,ameaça eleição,1
+2026-10-12,agredido eleitor,0
+2026-10-12,agressão eleição,0
+2026-10-12,atentado candidato,1
+2026-10-12,candidato baleado,0
+2026-10-12,vereador baleado,0
+2026-10-12,vereadora assassinada,0
+2026-10-12,candidato morto,1
+2026-10-12,tiro candidato,0
+2026-10-13,eleição,598
+2026-10-13,eleições,676
+2026-10-13,candidato,336
+2026-10-13,voto,823
+2026-10-13,violência política,4
+2026-10-13,violência eleitoral,0
+2026-10-13,ameaça de morte,8
+2026-10-13,ameaça candidato,3
+2026-10-13,ameaça eleição,1
+2026-10-13,agredido eleitor,0
+2026-10-13,agressão eleição,0
+2026-10-13,atentado candidato,1
+2026-10-13,candidato baleado,0
+2026-10-13,vereador baleado,0
+2026-10-13,vereadora assassinada,0
+2026-10-13,candidato morto,0
+2026-10-13,tiro candidato,1
+2026-10-14,eleição,738
+2026-10-14,eleições,812
+2026-10-14,candidato,460
+2026-10-14,voto,799
+2026-10-14,violência política,4
+2026-10-14,violência eleitoral,1
+2026-10-14,ameaça de morte,3
+2026-10-14,ameaça candidato,1
+2026-10-14,ameaça eleição,2
+2026-10-14,agredido eleitor,0
+2026-10-14,agressão eleição,0
+2026-10-14,atentado candidato,0
+2026-10-14,candidato baleado,0
+2026-10-14,vereador baleado,0
+2026-10-14,vereadora assassinada,1
+2026-10-14,candidato morto,0
+2026-10-14,tiro candidato,0
+2026-10-15,eleição,615
+2026-10-15,eleições,647
+2026-10-15,candidato,414
+2026-10-15,voto,612
+2026-10-15,violência política,7
+2026-10-15,violência eleitoral,2
+2026-10-15,ameaça de morte,7
+2026-10-15,ameaça candidato,2
+2026-10-15,ameaça eleição,2
+2026-10-15,agredido eleitor,0
+2026-10-15,agressão eleição,1
+2026-10-15,atentado candidato,1
+2026-10-15,candidato baleado,0
+2026-10-15,vereador baleado,0
+2026-10-15,vereadora assassinada,0
+2026-10-15,candidato morto,0
+2026-10-15,tiro candidato,0
+2026-10-16,eleição,827
+2026-10-16,eleições,889
+2026-10-16,candidato,556
+2026-10-16,voto,641
+2026-10-16,violência política,8
+2026-10-16,violência eleitoral,3
+2026-10-16,ameaça de morte,2
+2026-10-16,ameaça candidato,0
+2026-10-16,ameaça eleição,1
+2026-10-16,agredido eleitor,0
+2026-10-16,agressão eleição,0
+2026-10-16,atentado candidato,1
+2026-10-16,candidato baleado,0
+2026-10-16,vereador baleado,1
+2026-10-16,vereadora assassinada,0
+2026-10-16,candidato morto,0
+2026-10-16,tiro candidato,1
+2026-10-17,eleição,614
+2026-10-17,eleições,511
+2026-10-17,candidato,300
+2026-10-17,voto,679
+2026-10-17,violência política,6
+2026-10-17,violência eleitoral,1
+2026-10-17,ameaça de morte,2
+2026-10-17,ameaça candidato,3
+2026-10-17,ameaça eleição,3
+2026-10-17,agredido eleitor,0
+2026-10-17,agressão eleição,1
+2026-10-17,atentado candidato,2
+2026-10-17,candidato baleado,0
+2026-10-17,vereador baleado,0
+2026-10-17,vereadora assassinada,0
+2026-10-17,candidato morto,0
+2026-10-17,tiro candidato,1
+2026-10-18,eleição,643
+2026-10-18,eleições,637
+2026-10-18,candidato,580
+2026-10-18,voto,825
+2026-10-18,violência política,7
+2026-10-18,violência eleitoral,1
+2026-10-18,ameaça de morte,4
+2026-10-18,ameaça candidato,0
+2026-10-18,ameaça eleição,1
+2026-10-18,agredido eleitor,0
+2026-10-18,agressão eleição,0
+2026-10-18,atentado candidato,5
+2026-10-18,candidato baleado,0
+2026-10-18,vereador baleado,0
+2026-10-18,vereadora assassinada,1
+2026-10-18,candidato morto,1
+2026-10-18,tiro candidato,2
+2026-10-19,eleição,719
+2026-10-19,eleições,764
+2026-10-19,candidato,515
+2026-10-19,voto,728
+2026-10-19,violência política,7
+2026-10-19,violência eleitoral,3
+2026-10-19,ameaça de morte,1
+2026-10-19,ameaça candidato,1
+2026-10-19,ameaça eleição,0
+2026-10-19,agredido eleitor,0
+2026-10-19,agressão eleição,0
+2026-10-19,atentado candidato,1
+2026-10-19,candidato baleado,0
+2026-10-19,vereador baleado,0
+2026-10-19,vereadora assassinada,0
+2026-10-19,candidato morto,0
+2026-10-19,tiro candidato,3
+2026-10-20,eleição,966
+2026-10-20,eleições,997
+2026-10-20,candidato,497
+2026-10-20,voto,797
+2026-10-20,violência política,9
+2026-10-20,violência eleitoral,3
+2026-10-20,ameaça de morte,10
+2026-10-20,ameaça candidato,8
+2026-10-20,ameaça eleição,5
+2026-10-20,agredido eleitor,0
+2026-10-20,agressão eleição,1
+2026-10-20,atentado candidato,1
+2026-10-20,candidato baleado,0
+2026-10-20,vereador baleado,1
+2026-10-20,vereadora assassinada,0
+2026-10-20,candidato morto,1
+2026-10-20,tiro candidato,3
+2026-10-21,eleição,1043
+2026-10-21,eleições,991
+2026-10-21,candidato,494
+2026-10-21,voto,1142
+2026-10-21,violência política,8
+2026-10-21,violência eleitoral,1
+2026-10-21,ameaça de morte,2
+2026-10-21,ameaça candidato,1
+2026-10-21,ameaça eleição,3
+2026-10-21,agredido eleitor,0
+2026-10-21,agressão eleição,0
+2026-10-21,atentado candidato,0
+2026-10-21,candidato baleado,0
+2026-10-21,vereador baleado,1
+2026-10-21,vereadora assassinada,0
+2026-10-21,candidato morto,1
+2026-10-21,tiro candidato,2
+2026-10-22,eleição,1024
+2026-10-22,eleições,1007
+2026-10-22,candidato,484
+2026-10-22,voto,1067
+2026-10-22,violência política,4
+2026-10-22,violência eleitoral,2
+2026-10-22,ameaça de morte,9
+2026-10-22,ameaça candidato,5
+2026-10-22,ameaça eleição,3
+2026-10-22,agredido eleitor,0
+2026-10-22,agressão eleição,1
+2026-10-22,atentado candidato,0
+2026-10-22,candidato baleado,0
+2026-10-22,vereador baleado,0
+2026-10-22,vereadora assassinada,0
+2026-10-22,candidato morto,1
+2026-10-22,tiro candidato,0
+2026-10-23,eleição,1292
+2026-10-23,eleições,1290
+2026-10-23,candidato,756
+2026-10-23,voto,1423
+2026-10-23,violência política,12
+2026-10-23,violência eleitoral,1
+2026-10-23,ameaça de morte,13
+2026-10-23,ameaça candidato,5
+2026-10-23,ameaça eleição,7
+2026-10-23,agredido eleitor,0
+2026-10-23,agressão eleição,0
+2026-10-23,atentado candidato,0
+2026-10-23,candidato baleado,0
+2026-10-23,vereador baleado,0
+2026-10-23,vereadora assassinada,1
+2026-10-23,candidato morto,1
+2026-10-23,tiro candidato,2
+2026-10-24,eleição,1215
+2026-10-24,eleições,1139
+2026-10-24,candidato,554
+2026-10-24,voto,1672
+2026-10-24,violência política,10
+2026-10-24,violência eleitoral,2
+2026-10-24,ameaça de morte,7
+2026-10-24,ameaça candidato,2
+2026-10-24,ameaça eleição,0
+2026-10-24,agredido eleitor,0
+2026-10-24,agressão eleição,2
+2026-10-24,atentado candidato,0
+2026-10-24,candidato baleado,0
+2026-10-24,vereador baleado,0
+2026-10-24,vereadora assassinada,0
+2026-10-24,candidato morto,0
+2026-10-24,tiro candidato,5
+2026-10-25,eleição,3413
+2026-10-25,eleições,5340
+2026-10-25,candidato,718
+2026-10-25,voto,2775
+2026-10-25,violência política,39
+2026-10-25,violência eleitoral,5
+2026-10-25,ameaça de morte,6
+2026-10-25,ameaça candidato,1
+2026-10-25,ameaça eleição,14
+2026-10-25,agredido eleitor,2
+2026-10-25,agressão eleição,0
+2026-10-25,atentado candidato,0
+2026-10-25,candidato baleado,0
+2026-10-25,vereador baleado,0
+2026-10-25,vereadora assassinada,0
+2026-10-25,candidato morto,0
+2026-10-25,tiro candidato,2
+2026-10-26,eleição,2388
+2026-10-26,eleições,7917
+2026-10-26,candidato,526
+2026-10-26,voto,880
+2026-10-26,violência política,11
+2026-10-26,violência eleitoral,6
+2026-10-26,ameaça de morte,4
+2026-10-26,ameaça candidato,4
+2026-10-26,ameaça eleição,7
+2026-10-26,agredido eleitor,0
+2026-10-26,agressão eleição,2
+2026-10-26,atentado candidato,0
+2026-10-26,candidato baleado,0
+2026-10-26,vereador baleado,2
+2026-10-26,vereadora assassinada,0
+2026-10-26,candidato morto,0
+2026-10-26,tiro candidato,0
+2026-10-27,eleição,1589
+2026-10-27,eleições,1471
+2026-10-27,candidato,507
+2026-10-27,voto,462
+2026-10-27,violência política,17
+2026-10-27,violência eleitoral,3
+2026-10-27,ameaça de morte,2
+2026-10-27,ameaça candidato,1
+2026-10-27,ameaça eleição,7
+2026-10-27,agredido eleitor,0
+2026-10-27,agressão eleição,0
+2026-10-27,atentado candidato,1
+2026-10-27,candidato baleado,0
+2026-10-27,vereador baleado,0
+2026-10-27,vereadora assassinada,1
+2026-10-27,candidato morto,1
+2026-10-27,tiro candidato,1
+2026-10-28,eleição,1130
+2026-10-28,eleições,1114
+2026-10-28,candidato,463
+2026-10-28,voto,355
+2026-10-28,violência política,41
+2026-10-28,violência eleitoral,2
+2026-10-28,ameaça de morte,0
+2026-10-28,ameaça candidato,1
+2026-10-28,ameaça eleição,1
+2026-10-28,agredido eleitor,0
+2026-10-28,agressão eleição,1
+2026-10-28,atentado candidato,0
+2026-10-28,candidato baleado,0
+2026-10-28,vereador baleado,0
+2026-10-28,vereadora assassinada,1
+2026-10-28,candidato morto,0
+2026-10-28,tiro candidato,0
+2026-10-29,eleição,860
+2026-10-29,eleições,1202
+2026-10-29,candidato,316
+2026-10-29,voto,368
+2026-10-29,violência política,39
+2026-10-29,violência eleitoral,13
+2026-10-29,ameaça de morte,3
+2026-10-29,ameaça candidato,0
+2026-10-29,ameaça eleição,5
+2026-10-29,agredido eleitor,0
+2026-10-29,agressão eleição,0
+2026-10-29,atentado candidato,0
+2026-10-29,candidato baleado,0
+2026-10-29,vereador baleado,0
+2026-10-29,vereadora assassinada,0
+2026-10-29,candidato morto,0
+2026-10-29,tiro candidato,0
+2026-10-30,eleição,733
+2026-10-30,eleições,875
+2026-10-30,candidato,167
+2026-10-30,voto,312
+2026-10-30,violência política,22
+2026-10-30,violência eleitoral,6
+2026-10-30,ameaça de morte,6
+2026-10-30,ameaça candidato,0
+2026-10-30,ameaça eleição,3
+2026-10-30,agredido eleitor,0
+2026-10-30,agressão eleição,0
+2026-10-30,atentado candidato,1
+2026-10-30,candidato baleado,0
+2026-10-30,vereador baleado,0
+2026-10-30,vereadora assassinada,3
+2026-10-30,candidato morto,0
+2026-10-30,tiro candidato,0
+2026-10-31,eleição,488
+2026-10-31,eleições,576
+2026-10-31,candidato,139
+2026-10-31,voto,384
+2026-10-31,violência política,21
+2026-10-31,violência eleitoral,3
+2026-10-31,ameaça de morte,5
+2026-10-31,ameaça candidato,1
+2026-10-31,ameaça eleição,1
+2026-10-31,agredido eleitor,0
+2026-10-31,agressão eleição,0
+2026-10-31,atentado candidato,0
+2026-10-31,candidato baleado,0
+2026-10-31,vereador baleado,0
+2026-10-31,vereadora assassinada,0
+2026-10-31,candidato morto,1
+2026-10-31,tiro candidato,0
+2026-11-01,eleição,441
+2026-11-01,eleições,480
+2026-11-01,candidato,128
+2026-11-01,voto,335
+2026-11-01,violência política,28
+2026-11-01,violência eleitoral,7
+2026-11-01,ameaça de morte,1
+2026-11-01,ameaça candidato,0
+2026-11-01,ameaça eleição,9
+2026-11-01,agredido eleitor,0
+2026-11-01,agressão eleição,0
+2026-11-01,atentado candidato,0
+2026-11-01,candidato baleado,0
+2026-11-01,vereador baleado,0
+2026-11-01,vereadora assassinada,0
+2026-11-01,candidato morto,0
+2026-11-01,tiro candidato,0
+2026-11-02,eleição,371
+2026-11-02,eleições,517
+2026-11-02,candidato,121
+2026-11-02,voto,247
+2026-11-02,violência política,9
+2026-11-02,violência eleitoral,4
+2026-11-02,ameaça de morte,1
+2026-11-02,ameaça candidato,0
+2026-11-02,ameaça eleição,1
+2026-11-02,agredido eleitor,0
+2026-11-02,agressão eleição,0
+2026-11-02,atentado candidato,0
+2026-11-02,candidato baleado,0
+2026-11-02,vereador baleado,0
+2026-11-02,vereadora assassinada,0
+2026-11-02,candidato morto,0
+2026-11-02,tiro candidato,0
