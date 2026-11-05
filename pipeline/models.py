@@ -52,14 +52,18 @@ class Classification(BaseModel):
 
 
 class RawItem(BaseModel):
-    """Item coletado. Nunca guardamos handle/perfil do autor."""
+    """Item coletado. Nunca guardamos handle/perfil do autor.
 
-    source: str  # "bluesky" | "rss" | ...
-    source_id: str
+    `item_id` é o hash de `pipeline.privacy.item_id`. `source_ref` (URI/URL original) pode conter o
+    DID do autor: fica fora de `model_dump()` e só o RawStore o grava, criptografado.
+    """
+
+    source: str  # "bluesky" | "rss" | "gdelt" | ...
+    item_id: str = Field(pattern=r"^[0-9a-f]{32}$")
     text: str
     created_at: datetime
     lang: str | None = None
-    url: str | None = None
+    source_ref: str | None = Field(default=None, exclude=True, repr=False)
 
 
 class ProcessedItem(BaseModel):

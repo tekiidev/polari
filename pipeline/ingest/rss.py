@@ -3,7 +3,7 @@
 Dicas:
   - `feedparser.parse(url)` devolve entries com title, summary, link, published_parsed.
   - Para o texto a classificar, use title + summary (não faça scraping do corpo da matéria).
-  - source_id = hash estável da URL (hashlib.sha256) para deduplicar.
+  - item_id = pipeline.privacy.item_id("rss", url); a URL vai em source_ref (gravada criptografada).
   - Notícias são o "ground truth" para cruzar com o discurso das redes.
 """
 from __future__ import annotations

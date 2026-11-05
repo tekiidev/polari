@@ -6,7 +6,7 @@ histórico e algumas APIs só cobrem uma janela recente (confira a cobertura rea
 O que implementar:
   1. Percorrer [start, end] em fatias de `chunk_days` dias (comece com 1 dia).
   2. Para cada fatia, chamar `source.fetch(since=..., until=..., limit=...)`.
-  3. Idempotência: gravar em data/raw/ com chave (source, source_id); reexecutar não duplica.
+  3. Idempotência: gravar em data/raw/ com chave (source, item_id); reexecutar não duplica.
   4. Checkpoint: registrar as fatias concluídas (ex.: data/raw/_checkpoint.json) para retomar
      depois de uma queda ou de estouro de cota sem refazer o que já foi coletado.
   5. Respeitar limites de taxa (backoff) e logar quantos itens cada fatia trouxe.
