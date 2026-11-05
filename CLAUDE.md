@@ -46,7 +46,7 @@ O Polari mede onde e quando se **fala** de violência política, não onde ela *
   - Armazenamento remoto decidido: dataset privado no HF, criado e com acesso conferido (sincronização na Fase 2).
   - Notícias ficam para a Fase 2. Conta Google Cloud criada (crédito de teste vence ~90 dias após nov/2026); se usar BigQuery, configurar `maximum_bytes_billed` e alerta de orçamento antes da primeira consulta.
 - Próxima fase: 2 — Coleta de dados.
-- Prazo externo: o Polari é portfólio para o estágio GenAI do iFood (trilha AI Engineer); inscrição possivelmente até 23/11/2026, **a confirmar**. Com esse prazo, priorizar Fases 2–4 e deixar o globo para o fim.
+- Prazo externo: o Polari é portfólio para o estágio GenAI do iFood (trilha AI Engineer). O processo seletivo vai até 09/12/2026; a meta é se candidatar o quanto antes com uma versão mínima que mostre o lado de IA (coleta + gabarito + avaliação do LLM + BERTimbau no Hugging Face + README com resultados), alvo ~22/11. Repercussão internacional, globo e site ficam para depois da candidatura (até 09/12).
 
 ## Fases
 Uma fase por conversa. Se a conversa ficar longa, atualize "Estado atual" e continue numa nova com o mesmo título + "parte 2".
