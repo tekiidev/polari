@@ -15,7 +15,9 @@ Regras (escopo em eval/labeling_guide.md); o texto passa se alguma regra casar:
                são ~130 itens em 5 meses, custo desprezível;
   - frase:     a própria expressão já é o tema ("violência política", "motivação política");
   - politica:  violência + contexto político (eleição, cargo, partido, espectro político);
-  - evento:    ato/manifestação/protesto + violência ou repressão policial.
+  - evento:    ato/manifestação/protesto + violência ou repressão policial;
+  - interferencia: interferência estrangeira + contexto político (regra do guia de 07/11/2026).
+               Custo medido: +4.961 itens a classificar em 5 meses (de ~13,2 mil para ~18 mil).
 """
 from __future__ import annotations
 
@@ -69,6 +71,7 @@ POLITICAL = _words(
 )
 EVENT = _words(r"atos?", r"manifesta\w*", r"protest\w*", r"passeatas?", r"carreatas?", r"comicios?",
                r"marchas?", r"mobilizac\w*")
+INTERFERENCE = _words(r"interfer\w*", r"ingerenc\w*", r"intromiss\w*", r"soberania")
 PHRASE = _words(
     r"violencia politica", r"violencia eleitoral", r"violencia partidaria", r"motivac\w* politica",
     r"crime politico", r"atentado politico", r"assassinato politico", r"discussao politica",
@@ -87,6 +90,8 @@ def prefilter_rules(text: str, queries: list[str] | None = None) -> set[str]:
         rules.add("politica")
     if EVENT.search(t) and (violent or POLICE.search(t)):
         rules.add("evento")
+    if INTERFERENCE.search(t) and POLITICAL.search(t):
+        rules.add("interferencia")
     return rules
 
 

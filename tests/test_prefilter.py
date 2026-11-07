@@ -28,6 +28,8 @@ MUST_PASS = [
     "Absurdo.\n\n[link] Vereador é esfaqueado durante comício — Crime em MG",
     # palavras de autoria do crime (caso real barrado na medição de 07/11)
     "O matador do vereador explica friamente a execução",
+    # interferência estrangeira (regra do guia de 07/11)
+    "Governo Trump está interferindo nas eleições brasileiras",
 ]
 
 MUST_FAIL = [
