@@ -9,7 +9,7 @@ Regras que o resto do pipeline deve respeitar:
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, time, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 TZ = ZoneInfo("America/Sao_Paulo")
@@ -46,6 +46,13 @@ def local_day(dt: datetime) -> date:
     if dt.tzinfo is None:
         raise ValueError("datetime sem fuso: converta para aware (UTC) antes de agrupar por dia")
     return dt.astimezone(TZ).date()
+
+
+def day_bounds(d: date) -> tuple[datetime, datetime]:
+    """[00:00, 24:00) do dia local, em UTC. Dias com troca de horário têm 23 ou 25 horas."""
+    start = datetime.combine(d, time(0), TZ).astimezone(timezone.utc)
+    end = datetime.combine(d + timedelta(days=1), time(0), TZ).astimezone(timezone.utc)
+    return start, end
 
 
 def period_of(d: date) -> str | None:

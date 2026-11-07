@@ -16,19 +16,16 @@ from __future__ import annotations
 import argparse
 import csv
 import logging
-import time
-from datetime import date, datetime, time as dtime, timedelta, timezone
+from datetime import date, timedelta
 from pathlib import Path
 
-import httpx
-
-from pipeline.config import ROOT, settings
-from pipeline.study.windows import EVENTS, PERIODS, TZ, period_of
+from pipeline.config import ROOT
+from pipeline.ingest.bluesky import BlueskyClient, BlueskySource
+from pipeline.study.windows import EVENTS, PERIODS, day_bounds, period_of
 
 log = logging.getLogger("feasibility")
 
 OUT_DIR = ROOT / "docs" / "feasibility"
-BSKY = "https://bsky.social/xrpc"
 
 # Denominador: posts sobre o contexto eleitoral. A busca do Bluesky faz AND entre palavras;
 # os termos se sobrepõem, então NÃO some as colunas (a união exige paginar, Fase 2).
@@ -44,59 +41,12 @@ VIOLENCE_QUERIES = [
 QUERIES = CONTEXT_QUERIES + VIOLENCE_QUERIES
 
 
-def day_bounds_utc(d: date) -> tuple[str, str]:
-    """[00:00, 24:00) do dia local, em UTC ISO (o que a API espera)."""
-    start = datetime.combine(d, dtime(0), TZ).astimezone(timezone.utc)
-    end = datetime.combine(d + timedelta(days=1), dtime(0), TZ).astimezone(timezone.utc)
-    fmt = "%Y-%m-%dT%H:%M:%SZ"
-    return start.strftime(fmt), end.strftime(fmt)
-
-
-class Bluesky:
-    def __init__(self) -> None:
-        self.client = httpx.Client(timeout=30)
-        self._login()
-
-    def _login(self) -> None:
-        r = self.client.post(f"{BSKY}/com.atproto.server.createSession",
-                             json={"identifier": settings.bluesky_handle,
-                                   "password": settings.bluesky_app_password})
-        r.raise_for_status()
-        self.client.headers["Authorization"] = f"Bearer {r.json()['accessJwt']}"
-
-    def search(self, params: dict) -> dict:
-        for attempt in range(6):
-            r = self.client.get(f"{BSKY}/app.bsky.feed.searchPosts", params=params)
-            if r.status_code == 200:
-                return r.json()
-            if r.status_code in (400, 401) and "xpired" in r.text:
-                self._login()
-                continue
-            if r.status_code in (429, 500, 502, 503, 504):
-                wait = int(r.headers.get("retry-after", 0)) or 2 ** attempt * 5
-                log.warning("HTTP %s; esperando %ss", r.status_code, wait)
-                time.sleep(wait)
-                continue
-            r.raise_for_status()
-        raise RuntimeError("Bluesky: tentativas esgotadas")
-
+class Bluesky(BlueskyClient):
     def hits(self, q: str, d: date) -> int:
-        since, until = day_bounds_utc(d)
-        data = self.search({"q": q, "lang": "pt", "since": since, "until": until, "limit": 1})
-        return int(data.get("hitsTotal") or 0)
+        return super().hits(q, *day_bounds(d))
 
     def paginate_count(self, q: str, d: date) -> int:
-        since, until = day_bounds_utc(d)
-        params = {"q": q, "lang": "pt", "since": since, "until": until, "limit": 100}
-        uris: set[str] = set()
-        while True:
-            data = self.search(params)
-            posts = data.get("posts", [])
-            uris |= {p["uri"] for p in posts}  # só em memória, para deduplicar
-            if not posts or not data.get("cursor"):
-                return len(uris)
-            params["cursor"] = data["cursor"]
-            time.sleep(0.5)
+        return sum(1 for _ in BlueskySource([q], client=self).search(q, *day_bounds(d)))
 
 
 def _done(path: Path) -> set[tuple[str, str]]:
@@ -125,7 +75,6 @@ def run_bluesky(start: date, end: date, verify: bool) -> None:
             if (d.isoformat(), q) in done:
                 continue
             _append(daily, ["day", "query", "hits_total"], {"day": d, "query": q, "hits_total": bs.hits(q, d)})
-            time.sleep(0.3)
         if verify and i % 15 == 0 and (d.isoformat(), "eleição") not in _done(ver):
             est, real = bs.hits("eleição", d), bs.paginate_count("eleição", d)
             _append(ver, ["day", "query", "hits_total", "paginated"],

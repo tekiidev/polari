@@ -63,6 +63,8 @@ class RawItem(BaseModel):
     text: str
     created_at: datetime
     lang: str | None = None
+    # Consultas que trouxeram o item: proveniência para medir o recall por família de consulta.
+    queries: list[str] = Field(default_factory=list)
     source_ref: str | None = Field(default=None, exclude=True, repr=False)
 
 
