@@ -1,5 +1,14 @@
 # Avaliação (gabarito humano e teste de deriva)
 
+A régua é [`labeling_guide.md`](labeling_guide.md): o que conta como violência política e os
+códigos de rótulo (`0` não é; `1` no Brasil; `2` em outro país; `3` violência verbal).
+
+## Amostra do pré-filtro (Fase 2)
+Amostra estratificada e cega para medir o recall do pré-filtro: `python -m pipeline.classify.recall
+sample` e `report`. Rótulos em `eval/labeled_private/prefilter_sample.csv`; resultado em
+[`docs/prefilter.md`](../docs/prefilter.md). Os itens barrados do gabarito abaixo refazem essa
+medida sem o viés de ter ajustado o pré-filtro na mesma amostra.
+
 ## Gabarito
 1. Separe ~200 itens variados (inclua ironia, notícias compartilhadas e itens sem relação),
    distribuídos entre os períodos do estudo (baseline, campanha, entre turnos, pós-eleição).
