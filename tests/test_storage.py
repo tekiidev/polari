@@ -49,3 +49,12 @@ def test_delete_removes_items_and_empty_partition(tmp_path):
     assert [i.item_id for i in store.iter_items("bluesky", date(2026, 10, 4), date(2026, 10, 4))] == [B.item_id]
     assert store.delete("bluesky", date(2026, 10, 4), {B.item_id}) == 1
     assert not (tmp_path / "source=bluesky" / "day=2026-10-04" / "items.parquet").exists()
+
+
+def test_same_post_from_another_query_merges_queries(tmp_path):
+    store = RawStore(tmp_path, secret=KEY)
+    a1, a2 = A.model_copy(update={"queries": ["eleição"]}), A.model_copy(update={"queries": ["candidato"]})
+    assert store.put([a1]) == 1
+    assert store.put([a2, a1]) == 0
+    (back,) = store.iter_items("bluesky", date(2026, 10, 4), date(2026, 10, 4))
+    assert back.queries == ["candidato", "eleição"]
