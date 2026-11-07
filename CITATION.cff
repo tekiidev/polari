@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Se usar o Polari, cite-o assim. / If you use Polari, please cite it as below."
+type: software
+title: "Polari: monitor do discurso sobre violência política no Brasil"
+authors:
+  - given-names: Felipe
+    family-names: Oliveira
+repository-code: "https://github.com/tekiidev/polari"
+license: AGPL-3.0-only
+keywords:
+  - violência política
+  - eleições 2026
+  - NLP
+  - LLM
+  - BERTimbau
