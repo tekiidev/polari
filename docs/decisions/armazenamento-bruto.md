@@ -1,6 +1,6 @@
 # Decisão: onde guardar o texto bruto
 
-**Status:** aceita (Fase 1). Dataset privado `tekiidev/polari-raw` criado; token fine-grained com escrita só nele.
+**Status:** aceita (Fase 1), confirmada por teste na Fase 2. Dataset privado `tekiidev/polari-raw` criado; token fine-grained com escrita só nele. Implementação: `pipeline/remote.py`.
 
 ## Problema
 
@@ -43,6 +43,23 @@ precisar de qualquer forma na Fase 4, e 100 GB sobram com folga.
 
 **Muda para B2** se o squash do histórico se mostrar pouco confiável no teste da Fase 2, ou se os
 termos do HF para dados coletados de redes sociais impedirem o uso.
+
+## Teste da remoção (Fase 2, 05/11/2026)
+
+Com dados sintéticos no próprio `tekiidev/polari-raw`:
+
+1. **Só o `super_squash_history` não basta.** Depois do squash, o arquivo removido continuava
+   baixável pelo SHA do commit antigo: o HF guarda os arquivos LFS fora do histórico git e não os
+   apaga ao reescrever a branch.
+2. **Squash + `permanently_delete_lfs_files` nos LFS órfãos resolve.** A partição removida e a versão
+   antiga de uma partição reescrita ficaram inacessíveis também pelo commit antigo, e a versão viva
+   continuou baixável no `main`. Órfão = LFS cujo `file_oid` não é o SHA-256 de nenhum arquivo do
+   commit atual.
+
+Por isso `RemoteRaw.push` faz as duas coisas depois de qualquer remoção, e o HF continua valendo
+(o critério para trocar pelo B2 era o squash não ser confiável; com a limpeza dos LFS, é).
+Outra salvaguarda: `push` nunca espelha o diretório local apagando o que falta no remoto; só apaga
+caminhos listados um a um.
 
 ## Fontes
 

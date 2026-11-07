@@ -21,6 +21,8 @@ class Settings:
     nominatim_user_agent: str = os.getenv("NOMINATIM_USER_AGENT", "")
     min_cell_size: int = int(os.getenv("MIN_CELL_SIZE", "3"))
     secret_key: str = os.getenv("POLARI_SECRET_KEY", "")
+    hf_token: str = os.getenv("HF_TOKEN", "")
+    hf_raw_repo: str = os.getenv("HF_RAW_REPO", "")
 
     raw_dir: Path = ROOT / "data" / "raw"
     processed_dir: Path = ROOT / "data" / "processed"
