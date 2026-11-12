@@ -5,6 +5,7 @@ Não mede recall (isso é contra itens rotulados, pipeline/classify/recall.py): 
 import pytest
 
 from pipeline.classify.prefilter import matches_prefilter, prefilter_rules
+from pipeline.ingest.queries import FAMILIES
 
 MUST_PASS = [
     # casos centrais que a versão da Fase 1 perdia
@@ -66,3 +67,31 @@ def test_items_from_violence_queries_always_pass():
     text = "Ronnie Lessa, o pistoleiro, explica os detalhes do caso Marielle"  # sem cargo no texto
     assert prefilter_rules(text, ["vereadora assassinada"]) >= {"consulta"}
     assert not matches_prefilter("Hoje o tempo está agradável", ["eleição"])  # contexto não basta
+
+
+def test_only_the_intended_families_grant_the_consulta_rule():
+    """Quais famílias bastam por si é decisão medida, não detalhe: precisa quebrar se mudar.
+
+    `contexto` é o denominador (216 mil itens, sem exigir violência) e `espectro` foi podada em
+    11/11/2026 por medição — 21 de 21 itens que entravam só por ela eram código 0. Remover uma
+    família inteira não quebrava nenhum teste antes deste.
+    """
+    from pipeline.classify.prefilter import EXCLUDED_FAMILIES, VIOLENCE_QUERIES
+    from pipeline.ingest.queries import FAMILIES
+
+    assert EXCLUDED_FAMILIES == {"contexto", "espectro"}
+    for family in ("cargo", "evento"):
+        assert FAMILIES[family], f"família {family} vazia: o teste não provaria nada"
+        assert set(FAMILIES[family]) <= VIOLENCE_QUERIES
+    for family in EXCLUDED_FAMILIES:
+        assert not set(FAMILIES[family]) & VIOLENCE_QUERIES
+
+
+def test_spectrum_query_alone_no_longer_passes():
+    """O caso real que motivou a poda: termo de espectro + palavra que parece violência.
+
+    "Mata" de Mata Atlântica e "se mata" como expressão entravam pela família espectro.
+    """
+    text = "araras-vermelhas retornaram à Mata Atlântica depois de 200 anos"
+    spectrum_query = next(iter(FAMILIES["espectro"]))
+    assert not matches_prefilter(text, [spectrum_query])

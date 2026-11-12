@@ -3,10 +3,14 @@
 **Pergunta:** quantos itens de violência política o pré-filtro barra antes do classificador?
 O que ele barra nunca é classificado, então o recall dele limita o de todo o pipeline.
 
-**Resposta curta:** a primeira medição deu **23%** (intervalo de 90%: 8% a 54%). O pré-filtro foi
-corrigido a partir dos erros encontrados. A estimativa com o pré-filtro final é **62%** (18% a
-100%), mas é **preliminar e otimista**: foi calculada na mesma amostra usada para corrigi-lo. A
-medida sem esse viés sai dos itens barrados do gabarito da Fase 3.
+**Resposta curta: o pré-filtro aprova 7,9% dos itens e deixa passar 37,0% dos positivos**
+(intervalo de 90%: 21,3% a 48,5%), medido em 11/11/2026 nos 60 itens barrados do gabarito
+congelado — sorteados depois de o filtro estar pronto e rotulados às cegas.
+
+O caminho até esse número, porque ele muda a leitura: a primeira medição deu **23%** (8% a 54%); o
+pré-filtro foi corrigido a partir dos erros encontrados e a reavaliação deu **62%** (18% a 100%),
+mas na **mesma amostra** usada para corrigi-lo — media o ajuste, não o filtro. A medição sem viés
+derrubou o número para 36% e apertou o intervalo. Os 62% não devem ser citados.
 
 Código: `pipeline/classify/prefilter.py` (regras) e `pipeline/classify/recall.py` (amostra e
 estimativa). Régua: `eval/labeling_guide.md`. Os rótulos ficam em `eval/labeled_private/`, fora do git.
@@ -60,13 +64,14 @@ são casos centrais de violência. A fronteira pesa mais no número do que o reg
 
 ## Pré-filtro final
 
-Aprova **18.145 de 228.204 itens (8,0%)**. Por regra (um item pode casar com várias):
+Aprova **18.034 de 228.204 itens (7,9%)**, já com a família espectro podada (ver abaixo).
+Por regra (um item pode casar com várias):
 
 | regra | itens |
 |---|---|
 | `politica` (violência + contexto político) | 12.813 |
 | `interferencia` | 5.446 |
-| `consulta` (famílias cargo, evento, espectro) | 1.394 |
+| `consulta` (famílias cargo e evento) | 884 |
 | `evento` (ato + violência ou repressão) | 873 |
 | `frase` ("violência política" etc.) | 236 |
 
@@ -82,11 +87,59 @@ O único positivo ainda barrado é o caso da plataforma, rotulado `1`. Pelo guia
 nessa leitura, o recall pontual sobe para 100%. As duas leituras estão aqui porque o rótulo não foi
 revisto.
 
+## Medição sem viés (Fase 3, 11/11/2026)
+
+`python -m eval.prefilter_recall report`, com os 60 itens barrados do gabarito congelado. Estes
+foram sorteados **depois** de o pré-filtro estar pronto e rotulados às cegas (quem rotulou não
+sabia o status do item), então não têm o viés de ajuste do número acima. Estatística idêntica à da
+primeira medição, de propósito: dois estimadores diferentes para o mesmo número dariam uma
+diferença impossível de atribuir.
+
+| período | status | população | rotulados | `1` | `2` | `3` |
+|---|---|---|---|---|---|---|
+| baseline | aprovado | 3.540 | 30 | 21 | 1 | 0 |
+| baseline | barrado | 30.128 | 15 | 1 | 0 | 0 |
+| campanha_1t | aprovado | 6.373 | 40 | 23 | 0 | 0 |
+| campanha_1t | barrado | 70.281 | 15 | 3 | 0 | 0 |
+| entre_turnos | aprovado | 5.671 | 40 | 20 | 1 | 3 |
+| entre_turnos | barrado | 82.316 | 15 | 0 | 0 | 0 |
+| pos_eleicao | aprovado | 2.450 | 30 | 19 | 1 | 0 |
+| pos_eleicao | barrado | 27.445 | 15 | 1 | 1 | 0 |
+
+- **Recall (Brasil, sem ofensa verbal): 37,0%** (21,3% a 48,5%)
+- Recall (Brasil, com ofensa verbal): 38,0% (21,8% a 49,3%)
+- Recall (qualquer país, com ofensa verbal): 36,4% (21,5% a 47,2%)
+
+Números com o gabarito da errata de 12/11 (`f1b74e5d…`). Com o gabarito original eram 35,8% (20,3% a
+47,5%): a errata acrescentou positivos entre os aprovados e não mexeu nos barrados.
+
+**O recall real é 37,0%, não 62%.** O intervalo nem alcança os 62%, e o documento já previa isso: a
+estimativa anterior media o ajuste, não o filtro. O ganho maior não é o número, é o intervalo —
+de 18%–100% ("não sei") para 20%–48%, porque o gabarito tem 60 barrados bem distribuídos. Dá para
+afirmar com firmeza que **o pré-filtro perde quase dois terços dos positivos.**
+
+### A falha não é uniforme no tempo
+
+| período | barrados rotulados | positivos `1` | população barrada |
+|---|---|---|---|
+| baseline | 15 | 1 | 30.128 |
+| campanha_1t | 15 | **3** | 70.281 |
+| entre_turnos | 15 | **0** | 82.316 |
+| pos_eleicao | 15 | 1 | 27.445 |
+
+O filtro parece falhar **mais na campanha do 1º turno** e **menos entre os turnos**. Isso é pior do
+que um recall baixo uniforme: recall uniforme rebaixa a escala da série e preserva a forma da
+curva; recall que varia por período **distorce a forma**, que é o que o mapa e a linha do tempo
+mostram. Se o filtro perde mais na campanha, a série subestima justamente o período de interesse.
+
+Ressalva: 3 contra 0 em amostras de 15 pode ser ruído, e não se afirma tendência com isso. Fica
+como risco declarado e como o primeiro alvo da triagem por LLM do estrato barrado (limite 2).
+
 ## Limites
 
 1. **Viés de ajuste:** as regras foram corrigidas olhando os erros desta amostra. Medir nela de
-   novo infla o recall. A medida válida é a dos itens barrados do gabarito (Fase 3), sorteados
-   depois do ajuste.
+   novo infla o recall. ~~A medida válida é a dos itens barrados do gabarito (Fase 3)~~ — **feita
+   em 11/11/2026, acima: 37,0% (21,3% a 48,5%), após a errata de 12/11.**
 2. **Intervalo largo no barrado do contexto:** são 216 mil itens e 50 rótulos. "0 de 50" ainda é
    compatível com milhares de positivos perdidos. Proposta para a Fase 3: o LLM faz a triagem de
    2 a 3 mil itens desse estrato, e o humano confere os positivos.
@@ -94,11 +147,45 @@ revisto.
    trouxeram*. O que nenhuma consulta trouxe não aparece aqui. A checagem possível é cruzar com
    casos noticiados (Fase 2b).
 4. **Um rotulador:** sem concordância medida (kappa), que fica para a Fase 3.
-5. **Grafias que driblam a moderação** ("facist4", "m0rte") não são normalizadas pelo regex.
-   Medir o quanto aparecem antes de tratar.
+5. ~~**Grafias que driblam a moderação** ("facist4", "m0rte") não são normalizadas pelo regex.~~
+   **Medido em 11/11/2026 e descartado.** Varredura dos 228.204 itens com dígito ou símbolo no
+   lugar de letra nas raízes do escopo (`m[o0]rt`, `[a4]me[a4]c`, `[a4]ss[a4]ss[i1]n`, `t[i1]r`,
+   `f[a4]sc[i1]st`, `g[o0]lp[i1]st`, entre outras): **23 itens, 0,010% do corpus**, dos quais 16
+   barrados. Lidos um a um, **nenhum é positivo claro** pela régua: são hipótese retórica ("mesmo
+   que apareça imagens do candidato matand8 crianças"), metáfora eleitoral ("o voto da sentença da
+   sua própria M0RTE", "projeto de ódi0 e m0rt3"), desabafo sem alvo e ofensa a grupo (`3`). Um
+   único caso seria `1` ("o plano dos golpistas era o ASS4SS1NAT0 DE LULA") — 1 item em 228 mil
+   não move o recall.
+
+   Por que a intuição falhou: ofuscação existe para escapar de moderação por palavra-chave, e o
+   Bluesky não a aplica como as redes onde o hábito nasceu. Quem escreve assim ali está imitando
+   um costume, não driblando um filtro — e o uso predominante é metafórico, que o escopo exclui.
+   Normalizar custaria regex, testes e risco de falso positivo novo para ganho não mensurável.
 
 ## Precisão (aprovados rotulados)
 
 Itens com `1` ou `2` entre os 15 aprovados de cada família: cargo 8, contexto 6, espectro 4,
-evento 11. A precisão baixa é esperada (o pré-filtro prioriza recall), mas a família **espectro**
-(4 de 15) é a candidata a ser podada se a cota do classificador apertar.
+evento 11. A precisão baixa é esperada (o pré-filtro prioriza recall).
+
+## Poda da família espectro (11/11/2026)
+
+A família **espectro** (termo de espectro político + termo de violência) deixou de bastar por si
+para o item ser classificado (`EXCLUDED_FAMILIES` em `pipeline/classify/prefilter.py`). Decidido
+por medição, não por preferência:
+
+| evidência | número |
+|---|---|
+| precisão da família (Fase 2) | 4 de 15 |
+| itens que entravam **só** por ela, em 5 meses | 111 |
+| desses, positivos entre os 347 itens rotulados (dev + gabarito) | **0 de 21** |
+| itens do gabarito que mudaram de estrato | 1, de rótulo `0` — o texto `"023"` |
+| recall antes / depois | 36,0% / 35,8% |
+
+O cruzamento casa demais: "**Mata** Atlântica" (araras voltando ao bioma), "o pessoal de lá **se
+mata** antes de parar de dar dinheiro pra megacorporação", "existe vida fora do bluesky", adesivos
+de cristal, Neymar fora de treino. O risco levantado antes de medir — de a família ser a única a
+pegar incitação indireta — não se confirmou: nenhum positivo rotulado depende dela.
+
+A queda de 0,2 ponto no recall não é positivo perdido; é o denominador dos estratos mudando (49
+itens saíram de aprovado em todo o corpus). Reverter é tirar `"espectro"` de `EXCLUDED_FAMILIES`,
+e dois testes em `tests/test_prefilter.py` quebram se isso for feito sem refazer a medição.

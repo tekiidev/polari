@@ -15,7 +15,9 @@ ROOT = Path(__file__).resolve().parent.parent
 @dataclass(frozen=True)
 class Settings:
     gemini_api_key: str = os.getenv("GEMINI_API_KEY", "")
-    gemini_model: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+    gemini_model: str = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
+    openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
+    openai_model: str = os.getenv("OPENAI_MODEL", "")
     bluesky_handle: str = os.getenv("BLUESKY_HANDLE", "")
     bluesky_app_password: str = os.getenv("BLUESKY_APP_PASSWORD", "")
     nominatim_user_agent: str = os.getenv("NOMINATIM_USER_AGENT", "")
