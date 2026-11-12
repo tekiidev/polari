@@ -1,12 +1,65 @@
 # Polari
 
-> **Status:** em construção. Coleta do Bluesky pronta (228 mil posts de 01/06 a 04/11/2026, só no
-> armazenamento privado); classificador, modelo próprio e site ainda não.
-
-**Monitor de discurso sobre violência política no Brasil**, com pipeline automatizado
-(coleta → classificação com LLM → geocodificação → agregação) e mapa interativo.
+**Monitor de discurso sobre violência política no Brasil.** Pipeline de IA (coleta → classificação
+por LLM → geocodificação → agregação) e, como destino, um mapa interativo de consulta pública:
+globo 3D que gira para mostrar a repercussão por país e aproxima no Brasil até cada estado.
 
 Contexto: eleições de 2026 (1º turno em 04/10, 2º turno em 25/10, Lula x Flávio Bolsonaro).
+
+## Por que existe
+
+No Brasil, violência política é medida por **ocorrência registrada** — e isso tem dois furos.
+Ocorrência depende de denúncia, e quem é ameaçado numa cidade pequena muitas vezes não denuncia. E
+o dado consolidado chega meses depois, quando a eleição já passou.
+
+Falta a outra metade: **o quanto se fala** de violência política, onde e quando. Isso aparece em
+tempo quase real nas redes e não é medido de forma sistemática em português. Um jornalista que
+queira saber se o discurso sobre violência eleitoral cresceu em Pernambuco entre os dois turnos
+não tem hoje onde olhar.
+
+O Polari mede isso, e é explícito sobre o que **não** mede.
+
+> **O que o Polari mede:** onde e quando se *fala* de violência política, não onde ela *ocorreu*.
+> Cada item é rotulado por natureza do relato (primeira mão, notícia compartilhada, opinião/ironia,
+> boato). O nome faz referência à polaridade política, mas o projeto **não afirma** que a
+> polarização causa a violência: ele observa o discurso e expõe seus limites.
+> Veja [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md).
+
+## Estado (12/11/2026)
+
+| etapa | estado |
+|---|---|
+| Coleta do Bluesky | **pronta** — 228.204 posts de 01/06 a 04/11, com backfill e checkpoint |
+| Pré-filtro com recall medido | **pronto** — aprova 7,9% dos itens, deixa passar 37% dos positivos ([`docs/prefilter.md`](docs/prefilter.md)) |
+| Gabarito humano | **pronto** — 200 itens rotulados à mão, congelados com hash, com uma errata cega registrada |
+| Pares espelhados (teste de viés) | **pronto** — 20 pares |
+| Classificadores | **prontos** — OpenAI, Gemini, Claude e modelos locais (Ollama), mesma interface |
+| Avaliação e escolha do LLM | **pronta** — `gpt-6-luna` escolhido por medição ([`docs/eval-llm.md`](docs/eval-llm.md)) |
+| Modelo próprio (BERTimbau) | a fazer |
+| Agregação e pipeline diário | a fazer |
+| **Mapa interativo** | a fazer — é o destino do projeto, e depende dos agregados reais |
+
+A ordem é imposta pelos dados: o mapa só mostra o que a classificação produzir, e um globo com
+dados ilustrativos não é consulta pública.
+
+## O que o projeto resolve de engenharia
+
+- **Classificação com régua auditável.** LLM com saída estruturada por JSON schema, validada com
+  Pydantic — inclusive regras de coerência entre campos. Em JSON inválido, uma nova tentativa;
+  persistindo, o item é marcado como erro e **nunca** recebe rótulo inventado.
+- **Escolha de modelo por medição, não por preferência.** Três candidatos, mesmo gabarito,
+  critérios escritos **antes** de rodar ([`docs/decisions/escolha-llm.md`](docs/decisions/escolha-llm.md)).
+- **Gabarito congelado com hash** antes da primeira execução, e conjunto de desenvolvimento
+  separado do de teste — ajustar o prompt onde se mede o F1 produz número otimista.
+- **Viés partidário medido, não suposto.** Pares espelhados: o mesmo texto com os lados políticos
+  trocados tem de receber o mesmo rótulo. Modelo que falha nisso não classifica dado público,
+  mesmo com o melhor F1. Um mapa colorido por estado é exatamente o que faria uma assimetria
+  parecer legítima.
+- **Destilação para produção.** O LLM rotula em volume; o BERTimbau aprende e roda todo dia sem
+  cota de API. Em produção, o BERT classifica tudo e só a baixa confiança volta ao LLM.
+- **Privacidade no desenho.** IDs por HMAC com chave secreta, URI original só criptografado, texto
+  bruto fora do repositório público, remoção real testada contra o histórico do Hugging Face, base
+  legal da LGPD escrita com as fragilidades declaradas ([`docs/decisions/lgpd.md`](docs/decisions/lgpd.md)).
 
 > **O que o Polari mede:** onde e quando se *fala* de violência política, não onde ela *ocorreu*.
 > Cada item é rotulado como relato de primeira mão, notícia compartilhada, opinião/ironia ou boato.
@@ -31,21 +84,34 @@ em comparação com um período sem eleição?
 ## Arquitetura
 
 ```
- fontes (Bluesky | RSS/GDELT | Telegram*)        * futuro; X = conector opcional
-          │  pipeline/ingest  (backfill do passado + coleta incremental)
+ fontes: Bluesky (pronto) | GDELT para repercussão internacional (Fase 2b)
+          │  pipeline/ingest — backfill retomável por fatias + coleta incremental
           ▼
-   pré-filtro por palavras-chave  (pipeline/classify/prefilter.py)
+   armazenamento do bruto: Parquet por fonte e dia local (fora do git)
+          │  IDs por HMAC · URI criptografado · dataset privado no Hugging Face
           ▼
-   classificador LLM → JSON validado (schemas/ + prompts/), com model_id e prompt_version
+   pré-filtro por regras nomeadas, recall medido  (pipeline/classify/prefilter.py)
+          │  aprova ~8%: o que ele barra nunca é classificado, então o recall dele limita tudo
           ▼
-   resolvedor de cidade (tabela IBGE local → Nominatim só como fallback)
+   classificação                        ┌─ avaliação (eval/)
+     produção: BERTimbau todo dia       │   gabarito humano de 200, congelado com hash
+     baixa confiança → LLM              │   F1 com intervalo · pares espelhados · teste de deriva
+     (schemas/ + prompts/, com          │   escolha do LLM por critérios escritos antes
+      model_id e prompt_version)        └─
           ▼
-   agregação por período/janela (município × tipo × dia local; mínimo k=3) → web/public/data/*.json
+   resolvedor de UF e cidade (tabela IBGE local → Nominatim só como fallback)
           ▼
-   Next.js + Leaflet (mapa, linha do tempo com marcadores, comparação de janelas) → Vercel
+   agregação por período e janela (UF × tipo × dia local; mínimo k) → web/public/data/*.json
+          ▼
+   mapa: globo 3D (MapLibre GL) → países → Brasil por UF em Albers de áreas iguais
+          │  + linha do tempo · lista ordenada com n · cards de compartilhar
           ▲
-   GitHub Actions (cron diário) roda o pipeline, registra a saúde da execução e faz commit dos agregados
+   GitHub Actions (cron diário): roda o pipeline, registra a saúde e faz commit dos agregados
 ```
+
+**Projeções escolhidas por motivo:** o globo não usa projeção (vista ortográfica da esfera); o
+mapa-múndi plano usa Equal Earth; o Brasil por UF usa Albers de áreas iguais, porque em mapa
+colorido por valor o olho lê área como quantidade.
 
 ## Estrutura do repositório
 
@@ -60,10 +126,10 @@ polari/
 │   └── monitor/     # métricas de saúde por execução
 ├── schemas/         # contrato JSON da classificação
 ├── prompts/         # prompt versionado do classificador
-├── eval/            # gabarito humano, métricas e teste de deriva
-├── tests/           # contrato, janelas, saúde e utilitários
-├── docs/            # ARCHITECTURE.md e METHODOLOGY.md
-├── web/             # front-end Next.js + Leaflet
+├── eval/            # gabarito (gold.py), pares espelhados (mirrored.py), métricas
+├── tests/           # 123 testes: contrato, backends, gabarito, coleta, privacidade
+├── docs/            # arquitetura, metodologia e decisions/ (uma decisão por arquivo)
+├── web/             # front-end Next.js + MapLibre GL (globo → UF)
 ├── data/            # dados locais (raw/ fica fora do git)
 └── .github/workflows/daily.yml
 ```
@@ -93,29 +159,49 @@ python -m pipeline.classify.recall sample --start 2026-06-01 --end 2026-11-04
 python -m pipeline.classify.recall report
 ```
 
+Gabarito humano e teste de viés (rótulos fora do git; só o hash é versionado):
+
+```bash
+python -m eval.gold sample      # sorteia 200 itens, estratificados e cegos
+python -m eval.gold label       # rotula no terminal (retomável, salva a cada item)
+python -m eval.gold status      # progresso por código e por estrato
+python -m eval.gold freeze      # congela e imprime o SHA-256
+
+python -m eval.mirrored candidates   # acha posts espelháveis no corpus
+python -m eval.mirrored write        # escreve os pares no terminal
+python -m eval.mirrored check        # valida (recusa reescrita e par sem marcador de lado)
+```
+
 ## Roadmap
 
 - [x] 1. Fundação e viabilidade: contagem de dados por dia nas fontes, armazenamento do bruto fora do Actions, IDs com hash
 - [x] **2a. Coleta de dados:** Bluesky com backfill e checkpoint, sincronização com o HF, pré-filtro com recall medido (preliminar)
 - [ ] 2b. Notícias (GDELT) e repercussão internacional, depois da Fase 4
-- [ ] 3. Classificador e avaliação: classificador LLM, gabarito humano de 200 itens, escolha do LLM por medição
+- [ ] **3. Classificador e avaliação** (em andamento): gabarito de 200 congelado ✅, pares espelhados ✅, três backends ✅, falta a avaliação e a escolha do LLM
 - [ ] 4. Modelo próprio: baseline TF-IDF, fine-tuning do BERTimbau, publicação no Hugging Face
 - [ ] 5. Produção: agregação e métricas do estudo, pipeline diário (BERT → LLM)
-- [ ] 6. Vitrine: site com linha do tempo e mapa por UF, deploy, artigo técnico
+- [ ] 6. Vitrine: globo interativo (países → Brasil → UF), linha do tempo, cards de compartilhar, deploy, artigo técnico
 - [ ] 7. Revisão final
 
-## Métricas de impacto (preencher com números reais)
+## Números
+
+Medidos. O que ainda não foi medido está marcado como tal, não estimado.
 
 | Métrica | Valor |
 |---|---|
-| Tempo para rotular 200 itens à mão | _ min |
-| Tempo do pipeline para os mesmos 200 itens | _ min |
-| F1 do LLM vs. gabarito humano | _ |
-| F1 no teste de deriva (última execução) | _ |
-| % de itens geolocalizados | _ |
-| Itens por janela (antes/depois de cada turno) | _ |
-| Custo total | R$ 0 |
-| Dias de construção | _ |
+| Posts coletados (Bluesky, 01/06–04/11) | 228.204 |
+| Aprovados pelo pré-filtro | 18.034 (7,9%) |
+| Gabarito humano | 200 itens · 88 positivos no Brasil · 5 difíceis |
+| SHA-256 do gabarito | `f1b74e5d…5860` (errata cega de 12/11; original `7423fb24…9f6a`, congelado em 10/11 antes de rodar qualquer modelo) |
+| Precisão do pré-filtro no gabarito | 59% (83 positivos em 140 aprovados) |
+| Pares espelhados (teste de viés) | 20 pares · 40 textos |
+| Recall do pré-filtro (sem viés, 60 itens barrados do gabarito) | 37,0% (21,3% a 48,5%) |
+| F1 do classificador escolhido (`gpt-6-luna`, código 1) | 0,638 (IC 95%: 0,537–0,726) · precisão 0,88 · recall 0,50 |
+| Diferença para o segundo (`gpt-5.4-mini`) | +0,122 (IC pareado: +0,025 a +0,225) |
+| Simetria partidária (pares espelhados divergentes) | 0 de 20 nos três modelos medidos |
+| Modelos locais (Qwen3 8B, Gemma 3 12B) | eliminados por tempo: 103 h e 175 h para 25 mil itens (limite 48 h) |
+| Testes automatizados | 167 |
+| Custo de API da avaliação | US$ 0,64 (≈ 750 classificações) · projeção para 25 mil itens: US$ 18–21 com o `gpt-6-luna`, acima do limite de US$ 10 — redução de custo é a 1ª tarefa da Fase 4 |
 
 ## Ética e dados
 
@@ -126,6 +212,15 @@ python -m pipeline.classify.recall report
 - Não armazenamos handle nem perfil de autores. Células com menos de 3 itens são ocultadas.
 - Não classificamos a orientação política de pessoas (dado sensível, LGPD).
 - Respeitamos os termos de cada fonte; não coletamos do X sem a API oficial.
+- **Base legal e riscos:** o tratamento se apoia na finalidade de pesquisa (art. 7º, IV e art. 11,
+  II, "c"). O raciocínio completo, inclusive as fragilidades — o art. 7º, IV fala em "órgão de
+  pesquisa" e este é um projeto individual; a chave do HMAC é ponto único de falha; o bruto não tem
+  prazo de retenção definido — está em [`docs/decisions/lgpd.md`](docs/decisions/lgpd.md).
+- **Remoção:** quem quiser os próprios posts removidos pode pedir pelo e-mail do perfil, informando
+  o handle ou o link. Apagar o post no Bluesky também basta: a varredura periódica (Fase 5) remove
+  da cópia privada o que sumiu da origem.
+- **Posts nunca aparecem no site**, nem anonimizados — o texto é buscável e levaria ao autor. Ao
+  clicar num país ou estado, aparecem notícias públicas com título, veículo, data e link.
 
 ## Licença
 
