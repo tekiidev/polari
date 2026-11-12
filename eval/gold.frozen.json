@@ -1,0 +1,46 @@
+{
+  "sha256": "f1b74e5d0d90d178f75860a2cf038e7324cad07d1dbe15d55ffc4bcd72bd5860",
+  "n": 200,
+  "by_code": {
+    "0": 105,
+    "1": 88,
+    "2": 4,
+    "3": 3
+  },
+  "hard": 5,
+  "frozen_at": "2026-11-12T09:38:53-03:00",
+  "errata": {
+    "id": "errata-2026-11-12",
+    "reviewed": 78,
+    "changed": 9,
+    "transitions": {
+      "0→1": 5,
+      "0→3": 1,
+      "1→0": 1,
+      "2→1": 1,
+      "3→0": 1
+    },
+    "rules": [
+      "fora_do_escopo",
+      "interferencia",
+      "plataforma"
+    ],
+    "reason": "reaplicação cega do guia escrito a itens de interferência, plataforma e fora do escopo; ver docs/eval-llm.md"
+  },
+  "note": "Hash de (item_id, label). Texto e rótulos ficam fora do git.",
+  "history": [
+    {
+      "sha256": "7423fb24f4208960726d35e5a648903dd2b2b6a80a3346d91aed580006ea9f6a",
+      "n": 200,
+      "by_code": {
+        "0": 109,
+        "1": 83,
+        "2": 5,
+        "3": 3
+      },
+      "hard": 5,
+      "frozen_at": "2026-11-10T20:30:23-03:00",
+      "note": "Hash de (item_id, label). Texto e rótulos ficam fora do git."
+    }
+  ]
+}
