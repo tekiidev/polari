@@ -9,10 +9,11 @@ não têm acento. Todo termo tem fronteira de palavra: `tiro` não casa com "ret
 com "socorro".
 
 Regras (escopo em eval/labeling_guide.md); o texto passa se alguma regra casar:
-  - consulta:  o item veio de uma consulta de violência (famílias cargo, evento, espectro), que já
-               exige violência + contexto. Medido em 07/11/2026: o regex barrava casos centrais
-               dessas famílias ("o matador de Marielle Franco explica a execução", sem "vereadora");
-               são ~130 itens em 5 meses, custo desprezível;
+  - consulta:  o item veio de uma consulta de violência (famílias cargo e evento), que já exige
+               violência + contexto. Medido em 07/11/2026: o regex barrava casos centrais dessas
+               famílias ("o matador de Marielle Franco explica a execução", sem "vereadora"); são
+               ~130 itens em 5 meses, custo desprezível. A família `espectro` foi retirada em
+               11/11/2026 por medição (ver `EXCLUDED_FAMILIES`);
   - frase:     a própria expressão já é o tema ("violência política", "motivação política");
   - politica:  violência + contexto político (eleição, cargo, partido, espectro político);
   - evento:    ato/manifestação/protesto + violência ou repressão policial;
@@ -26,7 +27,20 @@ import re
 from pipeline.geocode.ibge import normalize
 from pipeline.ingest.queries import FAMILIES
 
-VIOLENCE_QUERIES = frozenset(q for fam, qs in FAMILIES.items() if fam != "contexto" for q in qs)
+# Famílias cujas consultas, por si, bastam para o item ser classificado (regra `consulta`).
+#
+# `contexto` está fora porque é o denominador: não exige violência, traz 216 mil itens.
+#
+# `espectro` saiu em 11/11/2026, por medição. Ela cruza termo de espectro político com termo de
+# violência, e o cruzamento casa demais: "Mata" de Mata Atlântica, "se mata" como expressão,
+# "existe vida fora do bluesky". Dos 347 itens rotulados (dev + gabarito), 21 entravam **somente**
+# por ela e **todos os 21 eram código 0**; nos 111 itens exclusivos dela em 5 meses, a leitura de
+# uma amostra não achou positivo claro. Precisão medida na Fase 2: 4 de 15. Reverter é tirar
+# `"espectro"` deste conjunto.
+EXCLUDED_FAMILIES = frozenset({"contexto", "espectro"})
+VIOLENCE_QUERIES = frozenset(
+    q for fam, qs in FAMILIES.items() if fam not in EXCLUDED_FAMILIES for q in qs
+)
 
 
 def _words(*patterns: str) -> re.Pattern[str]:
