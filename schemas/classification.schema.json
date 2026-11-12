@@ -10,6 +10,9 @@
     "violence_type",
     "report_nature",
     "target_type",
+    "perpetrator_type",
+    "vinculo_eleitoral",
+    "country",
     "city_mentioned",
     "uf_mentioned",
     "confidence",
@@ -30,10 +33,12 @@
         "homicidio",
         "violencia_de_genero",
         "intimidacao_institucional",
+        "interferencia_estrangeira",
+        "interferencia_plataforma",
         "outro",
         "nenhum"
       ],
-      "description": "Use 'nenhum' quando is_political_violence for false."
+      "description": "Use 'nenhum' quando is_political_violence for false, e só nesse caso."
     },
     "report_nature": {
       "type": "string",
@@ -55,11 +60,35 @@
         "agente_publico",
         "jornalista",
         "apoiador",
+        "manifestante",
+        "lideranca_social",
         "instituicao",
         "indeterminado",
         "nenhum"
       ],
       "description": "Quem sofreu a violência (função, nunca posição política)."
+    },
+    "perpetrator_type": {
+      "type": "string",
+      "enum": [
+        "apoiador",
+        "agente_do_estado",
+        "agente_politico",
+        "estado_estrangeiro",
+        "plataforma",
+        "indeterminado",
+        "nenhum"
+      ],
+      "description": "Quem cometeu, por função, nunca por lado político. 'nenhum' quando is_political_violence for false."
+    },
+    "vinculo_eleitoral": {
+      "type": "boolean",
+      "description": "True só se o próprio texto cita eleição, campanha, candidatura, urna ou voto."
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "País do fato (ISO 3166-1 alfa-2). 'BR' quando o texto não identifica outro."
     },
     "city_mentioned": {
       "type": ["string", "null"],
